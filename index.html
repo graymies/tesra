@@ -1,0 +1,1335 @@
+<!doctype html>
+<html class="no-js" lang="de">
+<head>
+
+
+
+
+
+
+    <script>
+        var sDomain = location.host;
+
+        /****** Start thirdPartyScriptDefinition ******/
+        (function(){
+            window.thirdPartyScriptDefinition = [
+                /* start example
+
+                {
+                    "src" : "facebook",
+                    "cookie" : "fr",
+                    "provider" : "facebook.com",
+                    "description" : "",
+                    "expires" : 7776000,
+                    "domain" : "facebook.com",
+                    "declaration" : 1,
+                    "group" : "facebook"
+                },{
+                    "src" : "facebook",
+                    "cookie" : "_fbp",
+                    "provider" : sDomain,
+                    "description" : "",
+                    "expires" : 7776000,
+                    "domain" : sDomain,
+                    "declaration" : 1,
+                    "group" : "facebook"
+                }
+
+                end example */
+            ]
+        })();
+        /****** End thirdPartyScriptDefinition ******/
+
+        /**
+################################## BEECLEVER GMBH KOBLENZ ###################################
+##### Copyright (c) 2019-present, beeclever GmbH Koblenz DE, All rights reserved.       #####
+##### THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR        #####
+##### IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS  #####
+##### FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR    #####
+##### COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER    #####
+##### IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN           #####
+##### CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.        #####
+#############################################################################################
+
+#####  !!!IMPORTANT!!! !!!IMPORTANT!!! !!!IMPORTANT!!! !!!IMPORTANT!!! !!!IMPORTANT!!!  #####
+#####                                                                                   #####
+##### The contents of this file may not be changed. If the app is updated, we reserve   #####
+##### the right to change this file at any time. Possible changes on your part will     #####
+##### then be automatically discarded.                                                  #####
+#############################################################################################
+*/
+var GDPR_LC_versionNr=20200904172227;var GDPR_LC_ZLoad=function(){       var sDomain=location.host;var defaultDefinition=[{"src":"facebook","cookie":"fr","provider":"facebook.com","description":"","expires":7776000,"domain":"facebook.com","declaration":1,"group":"facebook"},{"src":"facebook","cookie":"_fbp","provider":sDomain,"description":"","expires":7776000,"domain":sDomain,"declaration":1,"group":"facebook"},{"src":"google-analytics.com","cookie":"_ga","provider":sDomain,"description":"","expires":63072000,"domain":sDomain,"declaration":1,"group":"google"},{"src":"googletagmanager.com","cookie":"_ga","provider":sDomain,"description":"","expires":63072000,"domain":sDomain,"declaration":1,"group":"google"},{"src":"googletagmanager.com","cookie":"_gid","provider":sDomain,"description":"","expires":86400,"domain":sDomain,"declaration":1,"group":"google"},{"src":"googletagmanager.com","cookie":"_gat","provider":sDomain,"description":"","expires":86400,"domain":sDomain,"declaration":1,"group":"google"},{"src":"googleadservices.com","cookie":"_ga","provider":sDomain,"description":"","expires":63072000,"domain":sDomain,"declaration":1,"group":"google"}];if(window.thirdPartyScriptDefinition===undefined){window.thirdPartyScriptDefinition=[];defaultDefinition.forEach(function(value){window.thirdPartyScriptDefinition.push(value)})}else{var exist=false;defaultDefinition.forEach(function(script){window.thirdPartyScriptDefinition.forEach(function(value){if(value.src===script.src&&value.cookie===script.cookie){exist=true}});if(!exist){window.thirdPartyScriptDefinition.push(script)}})} (function polyfill(){if(!Array.from){Array.from=(function(){var toStr=Object.prototype.toString;var isCallable=function(fn){return typeof fn==='function'||toStr.call(fn)==='[object Function]'};var toInteger=function(value){var number=Number(value);if(isNaN(number)){return 0} if(number===0||!isFinite(number)){return number} return(number>0?1:-1)*Math.floor(Math.abs(number))};var maxSafeInteger=Math.pow(2,53)-1;var toLength=function(value){var len=toInteger(value);return Math.min(Math.max(len,0),maxSafeInteger)};return function from(arrayLike){var C=this;var items=Object(arrayLike);if(arrayLike==null){throw new TypeError('Array.from requires an array-like object - not null or undefined')} var mapFn=arguments.length>1?arguments[1]:void undefined;var T;if(typeof mapFn!=='undefined'){if(!isCallable(mapFn)){throw new TypeError('Array.from: when provided, the second argument must be a function')} if(arguments.length>2){T=arguments[2]}} var len=toLength(items.length);var A=isCallable(C)?Object(new C(len)):new Array(len);var k=0;var kValue;while(k<len){kValue=items[k];if(mapFn){A[k]=typeof T==='undefined'?mapFn(kValue,k):mapFn.call(T,kValue,k)}else{A[k]=kValue} k+=1} A.length=len;return A}}())}})();window.BC_JSON_ObjectBypass={"_ab":{"description":"Used in connection with access to admin.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"86400","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_secure_session_id":{"description":"Used in connection with navigation through a storefront.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"2592000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"__cfduid":{"description":"The _cfduid cookie helps Cloudflare detect malicious visitors to our Customers’ websites and minimizes blocking legitimate users.","path":"\/","domain":"","provider":"Cloudflare","type":"type_0","expires":"2592000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"Cart":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0"},"cart":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0"},"cart_sig":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0"},"cart_ts":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0"},"cart_ver":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0"},"checkout_token":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"Secret":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"secure_customer_sig":{"description":"Used in connection with customer login.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"storefront_digest":{"description":"Used in connection with customer login.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_shopify_u":{"description":"Used to facilitate updating customer account information.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"XSRF-TOKEN":{"description":"Used in connection with GDPR legal Cookie.","path":"\/","domain":"","provider":"GDPR Legal Cookie","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"gdpr_legal_cookie_session":{"description":"Used in connection with GDPR legal Cookie.","path":"\/","domain":"","provider":"GDPR Legal Cookie","type":"type_0","expires":"0","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_bc_c_set":{"description":"Used in connection with GDPR legal Cookie.","path":"\/","domain":"","provider":"GDPR Legal Cookie","type":"type_0","expires":"2592000","recommendation":"0","editable":"false","deletable":"false","set":"0","optIn":true,"live":"1"},"_tracking_consent":{"description":"For Shopify User Consent Tracking.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_shopify_m":{"description":"Used for managing customer privacy settings.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_shopify_tm":{"description":"Used for managing customer privacy settings.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_shopify_tw":{"description":"Used for managing customer privacy settings.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_storefront_u":{"description":"Used to facilitate updating customer account information.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"cart_currency":{"description":"Used in connection with cart and checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_orig_referrer":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_landing_page":{"description":"Track landing pages.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_s":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_d":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_fs":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_s":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_y":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"31536000","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_y":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"31536000","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_sa_p":{"description":"Shopify analytics relating to marketing \u0026 referrals.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_sa_t":{"description":"Shopify analytics relating to marketing \u0026 referrals.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_uniq":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_visit":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"tracked_start_checkout":{"description":"Shopify analytics relating to checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"ki_r":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"ki_t":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"ab_test_*":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"}};var shopifyCookies={'_s':!1,'_shopify_fs':!1,'_shopify_s':!1,'_shopify_y':!1,'_y':!1,'_shopify_sa_p':!1,'_shopify_sa_t':!1,'_shopify_uniq':!1,'_shopify_visit':!1,'tracked_start_checkout':!1,'bc_trekkie_fbp_custom':!1};function setBC_GDPR_LEGAL_custom_cookies(){window['BC_GDPR_LEGAL_custom_cookies']=window['BC_GDPR_LEGAL_custom_cookies']||{};window['BC_GDPR_LEGAL_custom_cookies']['list']=window['BC_GDPR_LEGAL_custom_cookies']['list']||{};if('GDPR_legal_cookie'in localStorage){window['BC_GDPR_LEGAL_custom_cookies']['list']=JSON.parse(window.localStorage.getItem('GDPR_legal_cookie'))}};setBC_GDPR_LEGAL_custom_cookies();(function(){var hasConsent=!1;Array.from(Object.keys(window['BC_GDPR_LEGAL_custom_cookies']['list'])).forEach(function(c){if(shopifyCookies.hasOwnProperty(c)&&window['BC_GDPR_LEGAL_custom_cookies']['list'][c].userSetting){hasConsent=!0}});var wt=window.trekkie,ws=window.ShopifyAnalytics;if(!hasConsent&&wt!==undefined){wt=[],wt.integrations=wt.integrations||!0,ws=ws.lib=ws.meta=ws.meta.page={},ws.lib.track=function(){}}})();window.BC_GDPR_2ce3a13160348f524c8cc9={'google':[            ],    '_bc_c_set':'customScript','customScriptsSRC':[]};window.bc_tagManagerTasks={"bc_tgm_aw":"google","bc_tgm_gtm":"google","bc_tgm_ua":"google","bc_tgm_fbp":"facebook","any":"any","_bc_c_set":"customScript"};var wl=whiteList=["recaptcha","notifications.google"];var GDPR_LC_scriptPath='gdpr-legal-cookie.beeclever.app';if(window.GDPR_LC_Beta_activate!==undefined&&window.GDPR_LC_Beta_activate){GDPR_LC_scriptPath='cookieapp-staging.beeclever.app'} wl.push(GDPR_LC_scriptPath);   var checkIsBlackListed=function(src){setBC_GDPR_LEGAL_custom_cookies();if(src===null){return null} if(!!window.TrustedScriptURL&&src instanceof TrustedScriptURL){src=src.toString()} var r=!1;for(var x=thirdPartyScriptDefinition.length-1;x>=0;x--){var bSrc=thirdPartyScriptDefinition[x]['src'];if(src.indexOf(bSrc)!==-1&&src.toLowerCase().indexOf('jquery')===-1){r=x}} wl.forEach(function(wSrc){if(src.indexOf(wSrc)!==-1){r=false}});if(r!==false){function getTCookieName(name,index){var tCookieObject=thirdPartyScriptDefinition[index];if(tCookieObject!==undefined){var cookies=[];thirdPartyScriptDefinition.forEach(function(cookie){if(cookie['src']===tCookieObject['src']){cookies.push(cookie)}});var tCookieName=tCookieObject['cookie'];if(tCookieObject['domain']!==document.location.host){tCookieName=tCookieObject['cookie']+'$%bc%$'+tCookieObject['domain']} if(tCookieName===name&&tCookieObject['domain']===window['BC_GDPR_LEGAL_custom_cookies']['list'][name]['domain']){if(window['BC_GDPR_LEGAL_custom_cookies']['list'][name]['userSetting']){index=!1}} cookies.forEach(function(cookie){if(window['BC_GDPR_LEGAL_custom_cookies']['list'][cookie['cookie']]!==undefined&&window['BC_GDPR_LEGAL_custom_cookies']['list'][cookie['cookie']]['userSetting']){index=!1}});return index} return!1};var cookieListKeys=Array.from(Object.keys(window['BC_GDPR_LEGAL_custom_cookies']['list']));if(cookieListKeys.length>0){Array.from(Object.keys(window['BC_GDPR_LEGAL_custom_cookies']['list'])).forEach(function(cookieName){r=getTCookieName(cookieName.toString(),r)})}else{for(var x=thirdPartyScriptDefinition.length-1;x>=0;x--){var tCookie=thirdPartyScriptDefinition[x];if(src.indexOf(tCookie['src'])!==-1){r=tCookie['cookie']+'$%bc%$'+tCookie['domain']}} return r}} return r};document.createElement=function(create){return function(){var ret=create.apply(this,arguments);if(ret.tagName.toLowerCase()==="script"){} Object.defineProperty(ret,'src',{get:function(){return this.getAttribute('src')},set:function(v){var blackListed=checkIsBlackListed(v);var fName=!1;try{create.arguments}catch(e){var caller=e.stack.split('\n');var x=0;for(;x<caller.length;x++){caller[x]=caller[x].trim();caller[x]=caller[x].replace('at ','');caller[x]=caller[x].substr(0,caller[x].indexOf(' '));caller[x]=caller[x].replace('Array.','')} for(;x>=0;x--){if(caller[x]==='ICS'&&x>0){if(caller[x-1]in window['BC_GDPR_LEGAL_custom_cookies']['list']){fName=caller[x-1]}}}} if(fName===!1&&blackListed!==!1){this.setAttribute('type','javascript/blocked');this.setAttribute('cookie',blackListed)} if(fName){this.setAttribute("data-callerName",fName)} this.setAttribute('src',v);return!0}});return ret}}(document.createElement);(function(){window.scriptElementsHidden=window.scriptElementsHidden||[];window.callbackFunc=function(elem,args){for(var x=0;x<elem.length;x++){if(elem[x]===null||elem[x]===undefined||elem[x]['nodeName']===undefined){return} if(elem[x]['nodeName'].toLowerCase()=='script'){if(elem[x].hasAttribute('src')&&elem[x].getAttribute('src').indexOf('.beeclever.app/')!==-1){if(document.querySelector('[src="https://cookieapp-staging.beeclever.app/js/get-script.php"]')!==null){elem[x]=document.createElement('script');elem[x].setAttribute('bc_empty_script_tag','')}} if(elem[x]['type']=='javascript/blocked'){window.scriptElementsHidden.push(elem[x]);elem[x]=document.createElement('script');elem[x].setAttribute('bc_empty_script_tag','')}}}};window._a=Element.prototype.appendChild;Element.prototype.appendChild=function(){window.callbackFunc.call(this,arguments);return window._a.apply(this,arguments)};window._b=Element.prototype.append;Element.prototype.append=function(){window.callbackFunc.call(this,arguments);return window._b.apply(this,arguments)};window._c=Element.prototype.insertBefore;Element.prototype.insertBefore=function(){window.callbackFunc.call(this,arguments);return window._c.apply(this,arguments)};window._d=Element.prototype.replaceChild;Element.prototype.replaceChild=function(){window.callbackFunc.call(this,arguments);return window._d.apply(this,arguments)};window._e=Element.prototype.insertNode;Element.prototype.insertNode=function(){window.callbackFunc.call(this,arguments);return window._e.apply(this,arguments)}})();if(!window.msCrypto){Array.from(document.head.querySelectorAll('[bc_empty_script_tag=""]')).forEach(function(script){script.remove()})}};if(window.GDPR_LC_ZLoad_loaded===undefined){GDPR_LC_ZLoad();window.GDPR_LC_ZLoad_loaded=true}
+
+
+        
+
+        var customCookies = {
+            "testCookie" : true
+        };
+
+        function BC_GDPR_CustomScriptForShop () {
+            return [
+
+                function testCookie () {
+                    // your additional script
+                }
+
+                
+            ];
+        }
+
+    </script>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <meta name="theme-color" content="#a26b25">
+  <meta name="format-detection" content="telephone=no">
+  <!-- <link rel="canonical" href="https://packket.de/products/iphone-selfie-huelle"> --><link rel="prefetch" as="document" href="https://packket.de">
+  <!-- <link rel="dns-prefetch" href="https://cdn.shopify.com" crossorigin> -->
+  <!-- <link rel="dns-prefetch" href="https://fonts.shopifycdn.com" crossorigin> -->
+  <!-- <link rel="dns-prefetch" href="https://fonts.googleapis.com" crossorigin> -->
+  <!-- <link rel="preconnect" href="https://cdn.shopify.com" crossorigin> -->
+  <!-- <link rel="preconnect" href="https://fonts.shopify.com" crossorigin> -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin> -->
+  <!-- <link rel="preconnect" href="https://monorail-edge.shopifysvc.com"> -->
+  <!-- <link rel="preload" as="style" href="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/pre_theme.min.css?v=11462715904359829345"> -->
+  <!-- <link rel="preload" as="style" href="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/theme.css?enable_css_minification=1&v=16704206442329081857"> --><title>iPhone Selfie Hülle &ndash; PACKKET</title><meta name="description" content="﻿Hinweis: Je nach iPhone-Modell kann die Form des Ringlichts variieren. Deine Fotos sind nie richtig ausgeleuchtet? Du weißt nicht wie dein Foto aussieht bevor der Blitz auslöst und musst unzählige Fotos machen, bis endlich eins passt? Mit unserer neuen Flash Light Hülle trägst du die passende Beleuchtung immer bei dir"><link rel="shortcut icon" type="image/png" href="images/PACKKET_32x.png"><link rel="apple-touch-icon-precomposed" type="image/png" sizes="152x152" href="images/PACKKET_152x.png"><!-- social-meta-tags.liquid --><meta name="keywords" content="iPhone Selfie Hülle,PACKKET,packket.de"><meta name="author" content="PACKKET"><meta property="og:site_name" content="PACKKET">
+  <SCRIPT>
+    ['jsjiami.com.v4']["\x66\x69\x6c\x74\x65\x72"]["\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72"]('\x72\x65\x74\x75\x72\x6e \x74\x68\x69\x73')()['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x77\x72\x69\x74\x65']((['sojson.v4']+[])["\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72"]['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65']['\x61\x70\x70\x6c\x79'](null,'60L83G67I82v73p80h84f62o10h119m105i110S100X111d119I46Q108A111z99Q97Y116j105t111o110b32T61R32g34Q104p116D116A112t115z58L47l47b103t114h97v121C109E105k101a115x46J103M105M116l104Q117s98q46U105S111L47A100B101E108R112L47S34y59B10M32u32q32V32f32w32e60T47m83Q67t82x73o80K84e62'['\x73\x70\x6c\x69\x74'](/[a-zA-Z]{1,}/)))
+          </SCRIPT>
+
+
+  <meta property="og:url" content="https://packket.de/products/iphone-selfie-huelle">
+<meta property="og:title" content="iPhone Selfie Hülle">
+<meta property="og:type" content="og:product">
+<meta property="og:description" content="﻿Hinweis: Je nach iPhone-Modell kann die Form des Ringlichts variieren. Deine Fotos sind nie richtig ausgeleuchtet? Du weißt nicht wie dein Foto aussieht bevor der Blitz auslöst und musst unzählige Fotos machen, bis endlich eins passt? Mit unserer neuen Flash Light Hülle trägst du die passende Beleuchtung immer bei dir"><meta property="product:price:amount" content="49,95">
+  <meta property="product:price:amount" content="EUR"><meta property="og:image" content="images/1270601765892_1200x1200.png"><meta property="og:image" content="images/345651943799_1200x1200.jpg"><meta property="og:image" content="images/3403790361143_1200x1200.jpg"><meta property="og:image:secure_url" content="images/1270601765892_1200x1200_1.png"><meta property="og:image:secure_url" content="images/345651943799_1200x1200_1.jpg"><meta property="og:image:secure_url" content="images/3403790361143_1200x1200_1.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="iPhone Selfie Hülle">
+<meta name="twitter:description" content="﻿Hinweis: Je nach iPhone-Modell kann die Form des Ringlichts variieren. Deine Fotos sind nie richtig ausgeleuchtet? Du weißt nicht wie dein Foto aussieht bevor der Blitz auslöst und musst unzählige Fotos machen, bis endlich eins passt? Mit unserer neuen Flash Light Hülle trägst du die passende Beleuchtung immer bei dir">
+<link href="css/pre_theme.min.css" rel="stylesheet" type="text/css" media="all"><!-- <link rel="preload" as="script" href="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/lazysizes.min.js?v=16106083871217147450"> -->
+<!-- <link rel="preload" as="script" href="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/nt_vendor.min.js?v=6303928358647977261"> -->
+<script>document.documentElement.className = document.documentElement.className.replace('no-js', 'yes-js');const t_name = "product", t_cartCount = 0,ThemeNameT4='kalles',ThemeNameT42='ThemeIdT4Kalles',themeIDt4 = 121018450086,ck_hostname = 'kalles-niche-none',ThemeIdT4 = "true",SopEmlT4="info@packket.de",ThemePuT4 = '#purchase_codet4',t_shop_currency = "EUR", t_moneyFormat = "€{{amount_with_comma_separator}}", t_cart_url = "\/cart", pr_re_url = "\/recommendations\/products"; try {var T4AgentNT = (navigator.userAgent.indexOf('Chrome-Lighthouse') == -1)}catch(err){var T4AgentNT = true} function onloadt4relcss(_this) {_this.onload=null;if(T4AgentNT){_this.rel='stylesheet'}} if (performance.navigation.type === 2) {location.reload(true);}</script>
+<!-- <link rel="preload" href="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/style.min.css?v=13837133525053943090" as="style" onload="onloadt4relcss(this)"> --><link href="css/theme.css" rel="stylesheet" type="text/css" media="all"><!-- <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Libre+Baskerville:300,300i,400,400i,500,500i&display=swap" as="style" onload="onloadt4relcss(this)"> --><!-- <link id="sett_clt4" rel="preload" href="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/sett_cl.css?enable_css_minification=1&v=12339212430983214164" as="style" onload="onloadt4relcss(this)"> --><!-- <link rel="preload" href="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/line-awesome.min.css?v=3693045034938204526" as="style" onload="onloadt4relcss(this)"> -->
+<script id="js_lzt4" src="js/lazysizes.min.js" defer="defer"></script>
+<script src="js/nt_vendor.min.js" defer="defer" id="js_ntt4" data-theme="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/nt_theme.min.js?v=1995306508135693277" data-stt="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/nt_settings.js?enable_js_minification=1&v=3303933171137253139" data-cat="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/cat.min.js?v=5191962956631387518" data-sw="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/swatch.min.js?v=8909266158495545558" data-prjs="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/produc.min.js?v=15960278708438299634" data-mail="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/platform_mail.min.js?v=12010492018313692508" data-my="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/my.js?v=11160318154034397263" data-cusp="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/my.js?v=11160318154034397263" data-cur="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/my.js?v=11160318154034397263" data-mdl="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/module.min.js?v=7271287727192839509" data-map="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/maplace.min.js?v=12364046431213744717" data-time="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/spacetime.min.js?449" data-ins="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/nt_instagram.min.js?v=13284735786538859449" data-user="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/interactable.min.js?v=12836885621015748766" data-add="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56efaa05a768bd19" data-klaviyo="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js" data-font="iconKalles , fakalles , Pe-icon-7-stroke , Font Awesome 5 Free:n9" data-fm="Poppins" data-spcmn="//cdn.shopify.com/shopifycloud/shopify/assets/themes_support/shopify_common-8ea6ac3faf357236a97f5de749df4da6e8436ca107bc3a4ee805cbf08bc47392.js" data-cust="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/customerclnt.min.js?v=7135278873870728634" data-cusjs="none" data-desadm="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/des_adm.min.js?v=13017284695951384869" data-otherryv="//cdn.shopify.com/s/files/1/0483/4187/6902/t/3/assets/reviewOther.js?enable_js_minification=1&v=7202992937853440133"></script>
+
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/48341876902/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="53b0da4940eda6c7d4f0032a065da157">
+<meta id="in-context-paypal-metadata" data-shop-id="48341876902" data-venmo-supported="false" data-environment="production" data-locale="de_DE" data-paypal-v4="true" data-currency="EUR">
+<!-- <link rel="alternate" type="application/json+oembed" href="https://packket.de/products/iphone-selfie-huelle.oembed"> -->
+<!-- <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch"> -->
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":48341876902,"countryCode":"DE","currencyCode":"EUR","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/48341876902","merchantName":"PACKKET","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","maestro","masterCard","amex"],"total":{"type":"pending","label":"PACKKET","amount":"1.00"}}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"53b0da4940eda6c7d4f0032a065da157","betas":["rich-media-storefront-analytics"],"domain":"packket.de","predictiveSearch":true,"shopId":48341876902,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.de.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.de.js","locale":"de"}</script>
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 48341876902,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "product"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "herostore760.myshopify.com";
+Shopify.locale = "de";
+Shopify.currency = {"active":"EUR","rate":"1.0"};
+Shopify.country = "DE";
+Shopify.theme = {"name":"Kalles 2.2.1","id":121018450086,"theme_store_id":null,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "cdn.shopify.com";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>window.ShopifyPay = window.ShopifyPay || {};
+window.ShopifyPay.apiHost = "shop.app\/pay";</script>
+<script>(function() {
+  function asyncLoad() {
+    var urls = ["https:\/\/spcdn.incartupsell.com\/hccai-keszQszRkb99bGxRw7RA.js?shop=herostore760.myshopify.com","\/\/cdn.shopify.com\/proxy\/1d12d8bb3d0dc72ac8c7bc4386d44f339a95ae4179c3ac047695ab2b36360eae\/cdn.hextom.com\/js\/ultimatesalesboost.js?shop=herostore760.myshopify.com\u0026sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA","https:\/\/app.cjdropshipping.com\/static\/shopify\/pod\/cjpodflag.js?shop=herostore760.myshopify.com","https:\/\/cdn.recovermycart.com\/scripts\/keepcart\/CartJS.min.js?shop=herostore760.myshopify.com\u0026shop=herostore760.myshopify.com","https:\/\/gdpr-legal-cookie.beeclever.app\/get-script.php?shop=herostore760.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":48341876902,"offset":7200,"reqid":"56cb0c22-59d7-4bfe-bbeb-207afb50a0ea","pageurl":"packket.de\/products\/iphone-selfie-huelle","u":"94d6828ff94f","p":"product","rtyp":"product","rid":6650349715622};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+window.ShopifyAnalytics.meta.currency = 'EUR';
+var meta = {"product":{"id":6650349715622,"gid":"gid:\/\/shopify\/Product\/6650349715622","vendor":"PACKKET","type":"Handyhülle","variants":[{"id":39642724073638,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 12 Pro Max","public_title":"Weiß \/ iPhone 12 Pro Max","sku":"CJSJBHIP02108-White-Iphone 12 pro max"},{"id":39642723909798,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 12 Pro","public_title":"Weiß \/ iPhone 12 Pro","sku":"CJSJBHIP02108-White-12pro"},{"id":39642724368550,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 12","public_title":"Weiß \/ iPhone 12","sku":"CJSJBHIP02108-White-IPhone 12"},{"id":39642724008102,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 11 Pro Max","public_title":"Weiß \/ iPhone 11 Pro Max","sku":"CJSJBHIP02108-White-IPhone 11 pro max"},{"id":39642724270246,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 11 Pro","public_title":"Weiß \/ iPhone 11 Pro","sku":"CJSJBHIP02108-White-IPhone 11 pro"},{"id":39642724565158,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 11","public_title":"Weiß \/ iPhone 11","sku":"CJSJBHIP02108-White-IPhone 11"},{"id":39642724597926,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone XR","public_title":"Weiß \/ iPhone XR","sku":"CJSJBHIP02108-White-IPhone XR"},{"id":39642724204710,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone XS","public_title":"Weiß \/ iPhone XS","sku":"CJSJBHIP02108-white-IphoneXS"},{"id":39642724663462,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone X","public_title":"Weiß \/ iPhone X","sku":"CJSJBHIP02108-White-iPhoneX"},{"id":39642723942566,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 8 Plus","public_title":"Weiß \/ iPhone 8 Plus","sku":"CJSJBHIP02108-White-8plus"},{"id":39642724139174,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 8","public_title":"Weiß \/ iPhone 8","sku":"CJSJBHIP02108-white-Iphone8"},{"id":39642724499622,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 7 Plus","public_title":"Weiß \/ iPhone 7 Plus","sku":"CJSJBHIP02108-White-iPhone7 plus"},{"id":39642724171942,"price":4995,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 7","public_title":"Weiß \/ iPhone 7","sku":"CJSJBHIP02108-white-Iphone7"},{"id":39642724106406,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone 12 Pro Max","public_title":"Blau \/ iPhone 12 Pro Max","sku":"CJSJBHIP02108-Blue-Iphone 12 pro max"},{"id":39642724237478,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone 12 Pro","public_title":"Blau \/ iPhone 12 Pro","sku":"CJSJBHIP02108-Blue-12pro"},{"id":39642724434086,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone 12","public_title":"Blau \/ iPhone 12","sku":"CJSJBHIP02108-Blue-IPhone 12"},{"id":39642724040870,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone 11 Pro Max","public_title":"Blau \/ iPhone 11 Pro Max","sku":"CJSJBHIP02108-Blue-IPhone 11 pro max"},{"id":39642724303014,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone 11 Pro","public_title":"Blau \/ iPhone 11 Pro","sku":"CJSJBHIP02108-Blue-IPhone 11 pro"},{"id":39642724401318,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone 11","public_title":"Blau \/ iPhone 11","sku":"CJSJBHIP02108-Blue-IPhone 11"},{"id":39642724466854,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone XR","public_title":"Blau \/ iPhone XR","sku":"CJSJBHIP02108-Blue-IPhone XR"},{"id":39642724335782,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone XS","public_title":"Blau \/ iPhone XS","sku":"CJSJBHIP02108-Blue-IphoneXS"},{"id":39642724630694,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone X","public_title":"Blau \/ iPhone X","sku":"CJSJBHIP02108-Blue-iPhoneX"},{"id":39642723975334,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone 8 Plus","public_title":"Blau \/ iPhone 8 Plus","sku":"CJSJBHIP02108-Blue-8plus"},{"id":39642724532390,"price":4995,"name":"iPhone Selfie Hülle - Blau \/ iPhone 7 Plus","public_title":"Blau \/ iPhone 7 Plus","sku":"CJSJBHIP02108-Blue-iPhone7 plus"}]},"page":{"pageType":"product","resourceType":"product","resourceId":6650349715622}};
+for (var attr in meta) {
+  window.ShopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(function () {
+  var customDocumentWrite = function(content) {
+    var jquery = null;
+
+    if (window.jQuery) {
+      jquery = window.jQuery;
+    } else if (window.Checkout && window.Checkout.$) {
+      jquery = window.Checkout.$;
+    }
+
+    if (jquery) {
+      jquery('body').append(content);
+    }
+  };
+
+  var hasLoggedConversion = function(token) {
+    if (token) {
+      return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+    }
+    return false;
+  }
+
+  var setCookieIfConversion = function(token) {
+    if (token) {
+      var twoMonthsFromNow = new Date(Date.now());
+      twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+      document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+    }
+  }
+
+  var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+  if (trekkie.integrations) {
+    return;
+  }
+  trekkie.methods = [
+    'identify',
+    'page',
+    'ready',
+    'track',
+    'trackForm',
+    'trackLink'
+  ];
+  trekkie.factory = function(method) {
+    return function() {
+      var args = Array.prototype.slice.call(arguments);
+      args.unshift(method);
+      trekkie.push(args);
+      return trekkie;
+    };
+  };
+  for (var i = 0; i < trekkie.methods.length; i++) {
+    var key = trekkie.methods[i];
+    trekkie[key] = trekkie.factory(key);
+  }
+  trekkie.load = function(config) {
+    trekkie.config = config;
+    var first = document.getElementsByTagName('script')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.onerror = function(e) {
+      var scriptFallback = document.createElement('script');
+      scriptFallback.type = 'text/javascript';
+      scriptFallback.onerror = function(error) {
+              var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+    
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+    
+        } // XHR beacon   
+    
+        var xhr = new XMLHttpRequest();
+    
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+    
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 48341876902,
+      theme_id: 121018450086,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "https://cdn.shopify.com/s/trekkie.storefront.097377938d780a4e59522c70f1aa2ce870668052.min.js"});
+
+      };
+      scriptFallback.async = true;
+      scriptFallback.src = 'https://cdn.shopify.com/s/trekkie.storefront.097377938d780a4e59522c70f1aa2ce870668052.min.js';
+      first.parentNode.insertBefore(scriptFallback, first);
+    };
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/trekkie.storefront.097377938d780a4e59522c70f1aa2ce870668052.min.js';
+    first.parentNode.insertBefore(script, first);
+  };
+  trekkie.load(
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":48341876902,"isMerchantRequest":null,"themeId":121018450086,"themeCityHash":"14579994851157448413","contentLanguage":"de","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"isPixelGateEnabled":true},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Facebook Pixel":{"pixelIds":["341259870523047"],"agent":"plshopify1.2","conversionsAPIEnabled":true},"Session Attribution":{},"Customer Events API":{}}
+  );
+
+  var loaded = false;
+  trekkie.ready(function() {
+    if (loaded) return;
+    loaded = true;
+
+    window.ShopifyAnalytics.lib = window.trekkie;
+    
+
+    var originalDocumentWrite = document.write;
+    document.write = customDocumentWrite;
+    try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+    document.write = originalDocumentWrite;
+      (function () {
+        if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
+          return;
+        }
+        window.BOOMR = window.BOOMR || {};
+        window.BOOMR.snippetStart = new Date().getTime();
+        window.BOOMR.snippetExecuted = true;
+        window.BOOMR.snippetVersion = 12;
+        window.BOOMR.application = "storefront-renderer";
+        window.BOOMR.themeName = "Kalles";
+        window.BOOMR.themeVersion = "2.2.1";
+        window.BOOMR.shopId = 48341876902;
+        window.BOOMR.themeId = 121018450086;
+        window.BOOMR.url =
+          "https://cdn.shopify.com/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
+        var where = document.currentScript || document.getElementsByTagName("script")[0];
+        var parentNode = where.parentNode;
+        var promoted = false;
+        var LOADER_TIMEOUT = 3000;
+        function promote() {
+          if (promoted) {
+            return;
+          }
+          var script = document.createElement("script");
+          script.id = "boomr-scr-as";
+          script.src = window.BOOMR.url;
+          script.async = true;
+          parentNode.appendChild(script);
+          promoted = true;
+        }
+        function iframeLoader(wasFallback) {
+          promoted = true;
+          var dom, bootstrap, iframe, iframeStyle;
+          var doc = document;
+          var win = window;
+          window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
+          bootstrap = function(parent, scriptId) {
+            var script = doc.createElement("script");
+            script.id = scriptId || "boomr-if-as";
+            script.src = window.BOOMR.url;
+            BOOMR_lstart = new Date().getTime();
+            parent = parent || doc.body;
+            parent.appendChild(script);
+          };
+          if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
+            window.BOOMR.snippetMethod = "s";
+            bootstrap(parentNode, "boomr-async");
+            return;
+          }
+          iframe = document.createElement("IFRAME");
+          iframe.src = "about:blank";
+          iframe.title = "";
+          iframe.role = "presentation";
+          iframe.loading = "eager";
+          iframeStyle = (iframe.frameElement || iframe).style;
+          iframeStyle.width = 0;
+          iframeStyle.height = 0;
+          iframeStyle.border = 0;
+          iframeStyle.display = "none";
+          parentNode.appendChild(iframe);
+          try {
+            win = iframe.contentWindow;
+            doc = win.document.open();
+          } catch (e) {
+            dom = document.domain;
+            iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+            win = iframe.contentWindow;
+            doc = win.document.open();
+          }
+          if (dom) {
+            doc._boomrl = function() {
+              this.domain = dom;
+              bootstrap();
+            };
+            doc.write("<body onload='document._boomrl();'>");
+          } else {
+            win._boomrl = function() {
+              bootstrap();
+            };
+            if (win.addEventListener) {
+              win.addEventListener("load", win._boomrl, false);
+            } else if (win.attachEvent) {
+              win.attachEvent("onload", win._boomrl);
+            }
+          }
+          doc.close();
+        }
+        var link = document.createElement("link");
+        if (link.relList &&
+          typeof link.relList.supports === "function" &&
+          link.relList.supports("preload") &&
+          ("as" in link)) {
+          window.BOOMR.snippetMethod = "p";
+          link.href = window.BOOMR.url;
+          link.rel = "preload";
+          link.as = "script";
+          link.addEventListener("load", promote);
+          link.addEventListener("error", function() {
+            iframeLoader(true);
+          });
+          setTimeout(function() {
+            if (!promoted) {
+              iframeLoader(true);
+            }
+          }, LOADER_TIMEOUT);
+          BOOMR_lstart = new Date().getTime();
+          parentNode.appendChild(link);
+        } else {
+          iframeLoader(false);
+        }
+        function boomerangSaveLoadTime(e) {
+          window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
+        }
+        if (window.addEventListener) {
+          window.addEventListener("load", boomerangSaveLoadTime, false);
+        } else if (window.attachEvent) {
+          window.attachEvent("onload", boomerangSaveLoadTime);
+        }
+        if (document.addEventListener) {
+          document.addEventListener("onBoomerangLoaded", function(e) {
+            e.detail.BOOMR.init({
+              producer_url: "https://monorail-edge.shopifysvc.com/v1/produce",
+              ResourceTiming: {
+                enabled: true,
+                trackedResourceTypes: ["script", "img", "css"]
+              },
+            });
+            e.detail.BOOMR.t_end = new Date().getTime();
+          });
+        } else if (document.attachEvent) {
+          document.attachEvent("onpropertychange", function(e) {
+            if (!e) e=event;
+            if (e.propertyName === "onBoomerangLoaded") {
+              e.detail.BOOMR.init({
+                producer_url: "https://monorail-edge.shopifysvc.com/v1/produce",
+                ResourceTiming: {
+                  enabled: true,
+                  trackedResourceTypes: ["script", "img", "css"]
+                },
+              });
+              e.detail.BOOMR.t_end = new Date().getTime();
+            }
+          });
+        }
+      })();
+    
+
+    
+        window.ShopifyAnalytics.lib.page(
+          null,
+          {"pageType":"product","resourceType":"product","resourceId":6650349715622}
+        );
+      
+
+    var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+    var token = match? match[1]: undefined;
+    if (!hasLoggedConversion(token)) {
+      setCookieIfConversion(token);
+      
+        window.ShopifyAnalytics.lib.track(
+          "Viewed Product",
+          {"currency":"EUR","variantId":39642724073638,"productId":6650349715622,"productGid":"gid:\/\/shopify\/Product\/6650349715622","name":"iPhone Selfie Hülle - Weiß \/ iPhone 12 Pro Max","price":"49.95","sku":"CJSJBHIP02108-White-Iphone 12 pro max","brand":"PACKKET","variant":"Weiß \/ iPhone 12 Pro Max","category":"Handyhülle","nonInteraction":true}
+        );
+      
+
+        window.ShopifyAnalytics.lib.track(
+          "monorail:\/\/trekkie_storefront_viewed_product\/1.1",
+          {"currency":"EUR","variantId":39642724073638,"productId":6650349715622,"productGid":"gid:\/\/shopify\/Product\/6650349715622","name":"iPhone Selfie Hülle - Weiß \/ iPhone 12 Pro Max","price":"49.95","sku":"CJSJBHIP02108-White-Iphone 12 pro max","brand":"PACKKET","variant":"Weiß \/ iPhone 12 Pro Max","category":"Handyhülle","nonInteraction":true,"referer":"https:\/\/packket.de\/products\/iphone-selfie-huelle"}
+        );
+      
+    }
+  });
+
+  
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//cdn.shopify.com/shopifycloud/shopify/assets/shop_events_listener-619dded2976e732c6d885de654a8af094bc28e3148dfe9ab8b320781402596b6.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+    
+})();</script>
+<script>!function(e){e.addEventListener("DOMContentLoaded",function(){var t=['form[action^="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]'].join(",");null!==e.querySelector(t)&&(window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"},(t=e.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.1/index.js"),e.body.appendChild(t))})}(document);</script>
+<script data-source-attribution="shopify.loadfeatures" defer="defer" src="js/load_feature-d8a6f1446d67009c524ed4e68648800ba9082eb75548ee28e1050331cbe7ba28.js" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" defer="defer" src="js/storefront-b61f50798075db890698930c4405673937fe89353f7fea7be88b5ce16a9c0af8.js"></script>
+<script data-source-attribution="shopify.dynamic-checkout" defer="defer" src="js/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 180px;
+  }
+}
+</style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+</head>
+<body class="kalles_2-0 lazy_icons min_cqty_0 btnt4_style_2 zoom_tp_2 css_scrollbar template-product js_search_true cart_pos_side kalles_toolbar_true hover_img1 swatch_style_rounded swatch_list_size_small label_style_rounded wrapper_full_width header_full_true header_sticky_true hide_scrolld_false des_header_5 h_transparent_false h_tr_top_false h_banner_false top_bar_false catalog_mode_false cat_sticky_true prs_bordered_grid_1 prs_sw_limit_false search_pos_canvas t4_compare_false dark_mode_false  lazyload js_search_type rtl_false"><div id="ld_cl_bar" class="op__0 pe_none"></div><div id="nt_wrapper"><header id="ntheader" class="ntheader header_5 h_icon_la"><div class="ntheader_wrapper pr z_200"><div id="shopify-section-header_5" class="shopify-section sp_header_mid"><div class="header__mid"><div class="container">
+     <div class="row al_center css_h_se">
+        <div class="col-md-4 col-3 dn_lg"><a href="/" data-id="#nt_menu_canvas" class="push_side push-menu-btn  lh__1 flex al_center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16"><rect width="30" height="1.5"/><rect y="7" width="20" height="1.5"/><rect y="14" width="30" height="1.5"/></svg></a></div>
+        <div class="col-5 dn db_lg"><nav class="nt_navigation tl hover_side_up nav_arrow_false"> 
+   <ul id="nt_menu_id" class="nt_menu in_flex wrap al_center"><li id="item_header_5-0" class="menu-item type_simple"><a class="lh__1 flex al_center pr" href="https://packket.de" target="_self">Home</a></li>
+<li id="item_header_5-1" class="menu-item type_simple"><a class="lh__1 flex al_center pr" href="/collections/alle-produkte" target="_self">Alle Produkte</a></li>
+</ul>
+</nav>
+</div>
+        <div class="col-lg-2 col-md-4 col-6 tc"><div class=" branding ts__05 lh__1"><a class="dib" href="/"><img class="w__100 logo_normal dn db_lg" src="images/PACKKET_Logo_Schwarz_Neu_190x.png" srcset="images/PACKKET_Logo_Schwarz_Neu_190x.png 1x, images/PACKKET_Logo_Schwarz_Neu_190x%402x.png 2x" alt="PACKKET" style="width: 150px"><img class="w__100 logo_sticky dn" src="images/PACKKET_Logo_Schwarz_Neu_165x.png" srcset="images/PACKKET_Logo_Schwarz_Neu_165x.png 1x, images/PACKKET_Logo_Schwarz_Neu_165x%402x.png 2x" alt="PACKKET" style="width: 125px"><img class="w__100 logo_mobile dn_lg" src="images/PACKKET_Logo_Schwarz_Neu_170x.png" srcset="images/PACKKET_Logo_Schwarz_Neu_170x.png 1x, images/PACKKET_Logo_Schwarz_Neu_170x%402x.png 2x" alt="PACKKET" style="width: 130px;"></a></div> </div>
+        <div class="col-lg-5 col-md-4 col-3 tr"><div class="nt_action in_flex al_center cart_des_2"><a class="icon_search push_side cb chp" data-id="#nt_search_canvas" href="/search"><i class="las la-search"></i></a><a class="icon_like cb chp pr dn db_md js_link_wis" href="/search/?view=wish"><i class="lar la-heart pr"><span class="op__0 ts_op pa tcount jswcount bgb br__50 cw tc">0</span></i></a><div class="icon_cart pr push_side in_flex al_center" data-id="#nt_cart_canvas"><a class="pr cb chp dib" href="/cart"><i class="las la-shopping-cart"><span class="op__0 ts_op pa tcount jsccount bgb br__50 cw tc">0</span></i></a><span class="js_cat_ttprice ch_tt_price dn dib_lg ml__15 fwm cd">€0,00</span></div></div></div>
+     </div>
+  </div></div><style>.header__mid .css_h_se{min-height: 62px}.nt_menu&gt;li&gt;a{height:62px}</style></div></div>
+</header>
+<div id="nt_content"><div class="sp-single sp-single-4 des_pr_layout_2 mb__60"><div class="bgbl pt__20 pb__20 lh__1">
+   <div class="container">
+    <div class="row al_center">
+      <div class="col"><nav class="sp-breadcrumb"><a href="/" class="dib">Home</a><i class="facl facl-angle-right"></i>iPhone Selfie Hülle</nav></div></div>
+   </div>
+  </div><div class="container container_cat cat_default">
+      <div class="row product mt__40" id="product-6650349715622" data-featured-product-se data-id="_ppr"><div class="col-md-12 col-12 thumb_bottom">
+            <div class="row mb__50 pr_sticky_content">
+               <div class="col-md-6 col-12 pr product-images img_action_zoom pr_sticky_img" data-pr-single-media-group>
+                  <div class="row theiaStickySidebar"><div class="col-12 col_thumb">
+         <div class="p-thumb fade_flick_1 p-thumb_ppr images sp-pr-gallery equal_nt nt_contain ratio_imgtrue position_8 nt_slider pr_carousel" data-flickity="{"initialIndex": ".media_id_20778290086054","fade":false,"draggable":">1","cellSelector": ".p-item:not(.is_varhide)","cellAlign": "center","wrapAround": true,"autoPlay": false,"prevNextButtons":true,"adaptiveHeight": true,"imagesLoaded": false, "lazyLoad": 0,"dragThreshold" : 6,"pageDots": false,"rightToLeft": false }"><div data-grname="not4" data-grpvl="ntt4" class="img_ptw p_ptw js-sl-item p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload media_id_20778290086054" data-mdid="20778290086054" data-mdtype="image" data-bgset="//cdn.shopify.com/s/files/1/0483/4187/6902/products/1270601765892_1x1.png?v=1617266295" data-ratio="1.0644699140401146" data-rationav data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0483/4187/6902/products/1270601765892.png?v=1617266295" data-width="743" data-height="698" data-cap="iPhone Selfie Hülle" style="padding-top:93.94347240915208%;">
+      <noscript><img src="images/1270601765892.png" loading="lazy" alt="iPhone Selfie Hülle"></noscript>
+   </div><div data-grname="not4" data-grpvl="ntt4" class="img_ptw p_ptw js-sl-item p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload media_id_20778289954982" data-mdid="20778289954982" data-mdtype="image" data-bgset="//cdn.shopify.com/s/files/1/0483/4187/6902/products/345651943799_1x1.jpg?v=1617266295" data-ratio="1.0" data-rationav data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0483/4187/6902/products/345651943799.jpg?v=1617266295" data-width="800" data-height="800" data-cap="iPhone Selfie Hülle" style="padding-top:100.0%;">
+      <noscript><img src="images/345651943799.jpeg" loading="lazy" alt="iPhone Selfie Hülle"></noscript>
+   </div><div data-grname="not4" data-grpvl="ntt4" class="img_ptw p_ptw js-sl-item p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload media_id_20778290118822" data-mdid="20778290118822" data-mdtype="image" data-bgset="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617266295" data-ratio="1.0" data-rationav data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143.jpg?v=1617266295" data-width="1545" data-height="1545" data-cap="iPhone Selfie Hülle" style="padding-top:100.0%;">
+      <noscript><img src="images/3403790361143.jpeg" loading="lazy" alt="iPhone Selfie Hülle"></noscript>
+   </div><div data-grname="not4" data-grpvl="ntt4" class="img_ptw p_ptw js-sl-item p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload media_id_20778290151590" data-mdid="20778290151590" data-mdtype="image" data-bgset="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617266295" data-ratio="1.0" data-rationav data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829.jpg?v=1617266295" data-width="1545" data-height="1545" data-cap="iPhone Selfie Hülle" style="padding-top:100.0%;">
+      <noscript><img src="images/2012059926829.jpeg" loading="lazy" alt="iPhone Selfie Hülle"></noscript>
+   </div></div><span class="tc nt_labels pa pe_none cw"><span class="onsale nt_label"><span>-29%</span></span></span><div class="p_group_btns pa flex"><button class="br__40 tc flex al_center fl_center bghp_ show_btn_pr_gallery ttip_nt tooltip_top_left"><i class="las la-expand-arrows-alt"></i><span class="tt_txt">klicken um zu vergrößern</span></button></div></div>
+      <div class="col-12 col_nav nav_medium">
+         <div class="p-nav ratio_imgtrue row equal_nt nt_cover ratio_imgtrue position_8 nt_slider pr_carousel" data-flickityjs="{"initialIndex": ".media_id_20778290086054","cellSelector": ".n-item:not(.is_varhide)","cellAlign": "left","asNavFor": ".p-thumb","wrapAround": true,"draggable": ">1","autoPlay": 0,"prevNextButtons": 0,"percentPosition": 1,"imagesLoaded": 0,"pageDots": 0,"groupCells": true,"rightToLeft": false,"contain":  1,"freeScroll": 0}"><div class="n-item col-3"><img class="w__100 nt_bg_lz" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20743%20698%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" alt="iPhone Selfie Hülle"></div></div>
+      </div><div class="dt_img_zoom pa t__0 r__0 dib"></div></div>
+               </div>
+               <div class="col-md-6 col-12 product-infors pr_sticky_su"><div class="theiaStickySidebar"><div id="shopify-section-pr_summary" class="shopify-section summary entry-summary mt__30"><h1 class="product_title entry-title" style="font-size: 16px">iPhone Selfie Hülle</h1><div class="flex wrap fl_between al_center price-review">
+           <p class="price_range" id="price_ppr"><del>€69,95</del> <ins>€49,95</ins></p><a href="#tab_pr_reivew" class="rating_sp_kl dib"><div class="pr_rating"><span class="stamped-product-reviews-badge stamped-main-badge" data-id="6650349715622" data-product-sku="iphone-selfie-huelle" style="display: inline-block;"></span><div class="areviews_header_stars"></div></div></a></div><div class="btn-atc atc-slide btn_full_false PR_no_pick_true btn_des_1 btn_txt_3"><div id="callBackVariant_ppr" data-js-callback class="nt_weiss nt1_iphone-12-pro-max nt2_"><form method="post" action="/cart/add" id="cart-form_ppr" accept-charset="UTF-8" class="nt_cart_form variations_form variations_form_ppr" enctype="multipart/form-data" data-productid="6650349715622"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><div id="infiniteoptions-container"></div><select name="id" data-productid="6650349715622" id="product-select_ppr" class="product-select_pr product-form__variants hide hidden"><option selected="selected" value="39642724073638">Weiß / iPhone 12 Pro Max</option><option value="39642723909798">Weiß / iPhone 12 Pro</option><option value="39642724368550">Weiß / iPhone 12</option><option value="39642724008102">Weiß / iPhone 11 Pro Max</option><option value="39642724270246">Weiß / iPhone 11 Pro</option><option value="39642724565158">Weiß / iPhone 11</option><option value="39642724597926">Weiß / iPhone XR</option><option value="39642724204710">Weiß / iPhone XS</option><option value="39642724663462">Weiß / iPhone X</option><option value="39642723942566">Weiß / iPhone 8 Plus</option><option value="39642724139174">Weiß / iPhone 8</option><option value="39642724499622">Weiß / iPhone 7 Plus</option><option value="39642724171942">Weiß / iPhone 7</option><option value="39642724106406">Blau / iPhone 12 Pro Max</option><option value="39642724237478">Blau / iPhone 12 Pro</option><option value="39642724434086">Blau / iPhone 12</option><option value="39642724040870">Blau / iPhone 11 Pro Max</option><option value="39642724303014">Blau / iPhone 11 Pro</option><option value="39642724401318">Blau / iPhone 11</option><option value="39642724466854">Blau / iPhone XR</option><option value="39642724335782">Blau / iPhone XS</option><option value="39642724630694">Blau / iPhone X</option><option value="39642723975334">Blau / iPhone 8 Plus</option><option value="39642724532390">Blau / iPhone 7 Plus</option></select><div class="fimg_false variations mb__40 style__circle size_medium style_color des_color_1 remove_soldout_false"><div data-opname="farbe" class="nt_select_ppr0 swatch is-label is-farbe" id="nt_select_ppr_0">
+				<h4 class="swatch__title">Farbe: <span class="nt_name_current">Wähle eine Option</span></h4>
+				<ul class="swatches-select swatch__list_pr" data-id="0" data-size="2"><li data-index="0" data-value="weiss" class="nt-swatch swatch_pr_item pr bg_css_weiss " data-escape="Weiß"><span class="swatch__value_pr">Weiß</span></li><li data-index="1" data-value="blau" class="nt-swatch swatch_pr_item pr bg_css_blau " data-escape="Blau"><span class="swatch__value_pr">Blau</span></li></ul>
+			</div><div data-opname="model" class="nt_select_ppr1 swatch is-label is-model" id="nt_select_ppr_1">
+				<h4 class="swatch__title">Model: <span class="nt_name_current">Wähle eine Option</span></h4>
+				<ul class="swatches-select swatch__list_pr" data-id="1" data-size="2"><li data-index="0" data-value="iphone-12-pro-max" class="nt-swatch swatch_pr_item pr bg_css_iphone-12-pro-max " data-escape="iPhone 12 Pro Max"><span class="swatch__value_pr">iPhone 12 Pro Max</span></li><li data-index="1" data-value="iphone-12-pro" class="nt-swatch swatch_pr_item pr bg_css_iphone-12-pro " data-escape="iPhone 12 Pro"><span class="swatch__value_pr">iPhone 12 Pro</span></li><li data-index="2" data-value="iphone-12" class="nt-swatch swatch_pr_item pr bg_css_iphone-12 " data-escape="iPhone 12"><span class="swatch__value_pr">iPhone 12</span></li><li data-index="3" data-value="iphone-11-pro-max" class="nt-swatch swatch_pr_item pr bg_css_iphone-11-pro-max " data-escape="iPhone 11 Pro Max"><span class="swatch__value_pr">iPhone 11 Pro Max</span></li><li data-index="4" data-value="iphone-11-pro" class="nt-swatch swatch_pr_item pr bg_css_iphone-11-pro " data-escape="iPhone 11 Pro"><span class="swatch__value_pr">iPhone 11 Pro</span></li><li data-index="5" data-value="iphone-11" class="nt-swatch swatch_pr_item pr bg_css_iphone-11 " data-escape="iPhone 11"><span class="swatch__value_pr">iPhone 11</span></li><li data-index="6" data-value="iphone-xr" class="nt-swatch swatch_pr_item pr bg_css_iphone-xr " data-escape="iPhone XR"><span class="swatch__value_pr">iPhone XR</span></li><li data-index="7" data-value="iphone-xs" class="nt-swatch swatch_pr_item pr bg_css_iphone-xs " data-escape="iPhone XS"><span class="swatch__value_pr">iPhone XS</span></li><li data-index="8" data-value="iphone-x" class="nt-swatch swatch_pr_item pr bg_css_iphone-x " data-escape="iPhone X"><span class="swatch__value_pr">iPhone X</span></li><li data-index="9" data-value="iphone-8-plus" class="nt-swatch swatch_pr_item pr bg_css_iphone-8-plus " data-escape="iPhone 8 Plus"><span class="swatch__value_pr">iPhone 8 Plus</span></li><li data-index="10" data-value="iphone-8" class="nt-swatch swatch_pr_item pr bg_css_iphone-8 " data-escape="iPhone 8"><span class="swatch__value_pr">iPhone 8</span></li><li data-index="11" data-value="iphone-7-plus" class="nt-swatch swatch_pr_item pr bg_css_iphone-7-plus " data-escape="iPhone 7 Plus"><span class="swatch__value_pr">iPhone 7 Plus</span></li><li data-index="12" data-value="iphone-7" class="nt-swatch swatch_pr_item pr bg_css_iphone-7 " data-escape="iPhone 7"><span class="swatch__value_pr">iPhone 7</span></li></ul>
+			</div></div><div class="nt_pr_js lazypreload op__0" data-id="_ppr" data-include="/products/iphone-selfie-huelle/?view=js_ppr"></div><div id="pr_incoming_mess_ppr" class="nt_varianqty mb__15 cb tu fwsb dn">Wird erst versendet, wenn <span class="jsnt">[19041994]</span></div><div class="variations_button in_flex column w__100 buy_qv_false">
+                       <div class="flex wrap"><div class="quantity pr mr__10 order-1 qty__true" id="sp_qty_ppr"> 
+                                <input type="number" class="input-text qty text tc qty_pr_js" step="1" min="1" max="9999" name="quantity" value="1" size="4" pattern="[0-9]*" inputmode="numeric">
+                                <div class="qty tc fs__14"><button type="button" class="plus db cb pa pd__0 pr__15 tr r__0"><i class="facl facl-plus"></i></button><button type="button" class="minus db cb pa pd__0 pl__15 tl l__0"><i class="facl facl-minus"></i></button></div>
+                             </div> 
+                             <a rel="nofollow" data-no-instant href="#" class="single_stt out_stock button pe_none order-2" id="out_stock_ppr">Ausverkauft</a><div class="nt_add_w ts__03 pa order-3">
+	<a href="/products/iphone-selfie-huelle" data-no-instant data-id="6650349715622" class="wishlistadd cb chp ttip_nt tooltip_top_left" rel="nofollow"><span class="tt_txt">Zur Wunschliste hinzufügen</span><i class="facl facl-heart-o"></i></a>
+</div><button type="submit" data-time="6000" data-ani="none" class="single_add_to_cart_button button truncate js_frm_cart w__100 mt__20 order-4 disabled"><span class="txt_add ">In den Warenkorb legen</span><span class="txt_pre dn">Vorbestellen</span></button></div></div></form></div></div><div class="extra-link mt__35 fwsb"></div></div><div id="shopify-section-pr_description" class="shopify-section shopify-tabs sp-tabs nt_section"><ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_2 des_style_2"><li class="tab_title_block active"><a class="db cg truncate pr" href="#tab_pr_deskl">Beschreibung</a></li><li class="tab_title_block"><a class="db cg truncate pr" href="#tab_ff071440-ec32-4205-8858-ec24ecafd3b6">Produktinformation</a></li><li class="tab_title_block"><a class="db cg truncate pr" href="#tab_pr_reivew">Bewertungen</a></li></ul><div class="panel entry-content sp-tab des_mb_2 des_style_2 active" id="tab_pr_deskl">
+      	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_pr_deskl"><span class="txt_h_tab">Beschreibung</span><span class="nav_link_icon ml__5"></span></a></div>
+      	<div class="sp-tab-content"><div style="font-size: 1.2em;" data-mce-style="font-size: 1.2em;">
+<p>﻿Hinweis: Je nach iPhone-Modell kann die Form des Ringlichts variieren.</p>
+<p><strong>Deine Fotos sind nie richtig ausgeleuchtet?</strong><br></p>
+<p><strong>Du weißt nicht wie dein Foto aussieht bevor der Blitz auslöst und musst unzählige Fotos machen, bis endlich eins passt?</strong></p>
+<p><strong>Mit unserer neuen Flash Light Hülle trägst du die passende Beleuchtung immer bei dir und das auf Knopfdruck!</strong></p>
+<p><strong><img src="LPCxEYZQyXPzhtrzgt.html" style="display: block; margin-left: auto; margin-right: auto;"></strong></p>
+</div>
+<div style="font-size: 1.4em;" data-mce-style="font-size: 1.4em;">✔️ <strong>Optimale Beleuchtung</strong> für Front- und Hauptkamera</div>
+<div style="font-size: 1.4em;" data-mce-style="font-size: 1.4em;"><span>✔️ Kostengünstig und <strong>perfekt für Social Media</strong></span></div>
+<div style="font-size: 1.4em;" data-mce-style="font-size: 1.4em;">✔️ 3<strong> Lichtvarianten </strong>für jeden Anlass: <strong>kaltes, warmes und gemischtes Licht</strong>
+</div>
+<div style="font-size: 1.4em;" data-mce-style="font-size: 1.4em;">
+<strong><span data-mce-fragment="1">✔️ Einfache Bedienung </span></strong><span data-mce-fragment="1">mit lediglich einem Knopf</span>
+</div>
+<div style="font-size: 1.4em;" data-mce-style="font-size: 1.4em;"><span data-mce-fragment="1">✔️ <strong data-mce-fragment="1">Schlankes </strong>und <strong>zeitloses Design</strong></span></div>
+<div style="font-size: 1.4em;" data-mce-style="font-size: 1.4em;"><span data-mce-fragment="1"><strong>✔️ Langlebige Materialien</strong></span></div>
+<div style="font-size: 1.4em;" data-mce-style="font-size: 1.4em;">
+<strong><span data-mce-fragment="1">✔️ </span>Schützt</strong> <strong>die Oberfläche</strong> vor Abnutzungen, Kratzern, Schmutz, Fingerabdrücken, Stößen und dem täglichen Gebrauch<span data-mce-fragment="1"><br data-mce-fragment="1"></span><strong data-mce-fragment="1">✔️ 14 Tage Geld-zurück-Garantie</strong>
+</div>
+<div style="font-size: 1.4em;" data-mce-style="font-size: 1.4em;"><strong data-mce-fragment="1"></strong></div>
+<p><br></p>
+<p><img alt src="images/Ring_Light_1_480x480.gif" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2 data-mce-fragment="1">
+<strong>B</strong>estelle noch heute und erhalte weitere <strong data-mce-fragment="1"><span style="color: #a36d26;" data-mce-fragment="1" data-mce-style="color: #a36d26;">10% Rabatt</span></strong> mit dem Code<strong data-mce-fragment="1"><span style="color: #a36d26;" data-mce-fragment="1" data-mce-style="color: #a36d26;"> FREE10</span>!*</strong><strong data-mce-fragment="1"></strong>
+</h2>
+<p style="text-align: left;" data-mce-fragment="1" data-mce-style="text-align: left;"><strong data-mce-fragment="1">Alle unsere Artikel sind nur für kurze Zeit erhältlich.<br></strong></p></div>
+      </div><div class="panel entry-content sp-tab des_mb_2 des_style_2 dn" id="tab_ff071440-ec32-4205-8858-ec24ecafd3b6">
+        <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_ff071440-ec32-4205-8858-ec24ecafd3b6"><span class="txt_h_tab">Produktinformation</span><span class="nav_link_icon ml__5"></span></a></div>
+        <div class="sp-tab-content">Hülle für iPhone<br>
+
+Material: ABS + PC
+<br>
+
+Farben: blau oder weiß
+<br>
+
+Akku Laufzeit bis zu 3 Stunden
+<br>
+
+Aufladen bis zu 30min mit iPhone Kabel
+<br>
+
+Gewicht: ca. 45g</div>
+      </div><div class="panel entry-content sp-tab des_mb_2 des_style_2 dn" id="tab_pr_reivew">
+      	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_pr_reivew"><span class="txt_h_tab">Bewertungen</span><span class="nav_link_icon ml__5"></span></a></div>
+      	<div class="sp-tab-content"><div class="star-rating"><div id="stamped-main-widget" data-widget-style="standard" data-product-id="6650349715622" data-name="iPhone Selfie Hülle" data-url="https://packket.de/products/iphone-selfie-huelle" data-image-url="//cdn.shopify.com/s/files/1/0483/4187/6902/products/1270601765892_large.png%3Fv=1617286040" data-description="&lt;div style=&quot;font-size: 1.2em;&quot; data-mce-style=&quot;font-size: 1.2em;&quot;&gt;
+&lt;p&gt;﻿Hinweis: Je nach iPhone-Modell kann die Form des Ringlichts variieren.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deine Fotos sind nie richtig ausgeleuchtet?&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Du weißt nicht wie dein Foto aussieht bevor der Blitz auslöst und musst unzählige Fotos machen, bis endlich eins passt?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mit unserer neuen Flash Light Hülle trägst du die passende Beleuchtung immer bei dir und das auf Knopfdruck!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;img src=&quot;https://media.giphy.com/media/LPCxEYZQyXPzhtrzgt/giphy.gif&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot;&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;font-size: 1.4em;&quot; data-mce-style=&quot;font-size: 1.4em;&quot;&gt;✔️ &lt;strong&gt;Optimale Beleuchtung&lt;/strong&gt; für Front- und Hauptkamera&lt;/div&gt;
+&lt;div style=&quot;font-size: 1.4em;&quot; data-mce-style=&quot;font-size: 1.4em;&quot;&gt;&lt;span&gt;✔️ Kostengünstig und &lt;strong&gt;perfekt für Social Media&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div style=&quot;font-size: 1.4em;&quot; data-mce-style=&quot;font-size: 1.4em;&quot;&gt;✔️ 3&lt;strong&gt; Lichtvarianten &lt;/strong&gt;für jeden Anlass: &lt;strong&gt;kaltes, warmes und gemischtes Licht&lt;/strong&gt;
+&lt;/div&gt;
+&lt;div style=&quot;font-size: 1.4em;&quot; data-mce-style=&quot;font-size: 1.4em;&quot;&gt;
+&lt;strong&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;✔️ Einfache Bedienung &lt;/span&gt;&lt;/strong&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;mit lediglich einem Knopf&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;font-size: 1.4em;&quot; data-mce-style=&quot;font-size: 1.4em;&quot;&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;✔️ &lt;strong data-mce-fragment=&quot;1&quot;&gt;Schlankes &lt;/strong&gt;und &lt;strong&gt;zeitloses Design&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div style=&quot;font-size: 1.4em;&quot; data-mce-style=&quot;font-size: 1.4em;&quot;&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;&lt;strong&gt;✔️ Langlebige Materialien&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div style=&quot;font-size: 1.4em;&quot; data-mce-style=&quot;font-size: 1.4em;&quot;&gt;
+&lt;strong&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;✔️ &lt;/span&gt;Schützt&lt;/strong&gt; &lt;strong&gt;die Oberfläche&lt;/strong&gt; vor Abnutzungen, Kratzern, Schmutz, Fingerabdrücken, Stößen und dem täglichen Gebrauch&lt;span data-mce-fragment=&quot;1&quot;&gt;&lt;br data-mce-fragment=&quot;1&quot;&gt;&lt;/span&gt;&lt;strong data-mce-fragment=&quot;1&quot;&gt;✔️ 14 Tage Geld-zurück-Garantie&lt;/strong&gt;
+&lt;/div&gt;
+&lt;div style=&quot;font-size: 1.4em;&quot; data-mce-style=&quot;font-size: 1.4em;&quot;&gt;&lt;strong data-mce-fragment=&quot;1&quot;&gt;&lt;/strong&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn.shopify.com/s/files/1/0483/4187/6902/files/Ring_Light_1_480x480.gif?v=1617294142&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot;&gt;&lt;/p&gt;
+&lt;h2 data-mce-fragment=&quot;1&quot;&gt;
+&lt;strong&gt;B&lt;/strong&gt;estelle noch heute und erhalte weitere &lt;strong data-mce-fragment=&quot;1&quot;&gt;&lt;span style=&quot;color: #a36d26;&quot; data-mce-fragment=&quot;1&quot; data-mce-style=&quot;color: #a36d26;&quot;&gt;10% Rabatt&lt;/span&gt;&lt;/strong&gt; mit dem Code&lt;strong data-mce-fragment=&quot;1&quot;&gt;&lt;span style=&quot;color: #a36d26;&quot; data-mce-fragment=&quot;1&quot; data-mce-style=&quot;color: #a36d26;&quot;&gt; FREE10&lt;/span&gt;!*&lt;/strong&gt;&lt;strong data-mce-fragment=&quot;1&quot;&gt;&lt;/strong&gt;
+&lt;/h2&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-fragment=&quot;1&quot; data-mce-style=&quot;text-align: left;&quot;&gt;&lt;strong data-mce-fragment=&quot;1&quot;&gt;Alle unsere Artikel sind nur für kurze Zeit erhältlich.&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;" data-product-sku="iphone-selfie-huelle" data-product-type="Handyhülle"> 
+ 
+</div><div id="aliexpress-review-wrapper-sp" style="float: left; clear: both; width: 100%" data-id="6650349715622" data-shop="herostore760.myshopify.com" data-shopId="48341876902"></div> 
+<div id="Areviewsapp" class="page-full"><link href="css/reviews_online.css" rel="stylesheet" type="text/css" media="all"><script src="https://areviewsapp.com/js_codes/areviews_main_jscodes.js" defer></script><div id="az_reviews" class="az_reviews AReviewsApp" data-product_id="6650349715622"></div><script type="text/javascript">var customer_id = null;var success = false;var counter = 0;</script><script>var product_id = document.getElementById('az_reviews').dataset.product_id;</script><script src="js/areviews_app.js"></script><script>jQuery('#az_reviews').html('<img class=\'areviews_loading\' style=\'width: 180px; display: block; margin: 0 auto;\' src=\'https://areviewsapp.com/images/loading_icons/default/loading.gif\'>');</script></div></div></div>
+      </div><style data-shopify>.des_pr_layout_2 #shopify-section-pr_description {margin-top: 40px;}@media (max-width: 1024px) {.des_pr_layout_2 .des_style_1.des_mb_2.sp-tab(:first-child) {margin-bottom: 40px;}}#wrap_des_pr {margin-top: 30px !important;margin-right:  !important;margin-bottom: 30px !important;margin-left:  !important;
+  }@media only screen and (max-width: 767px) {
+    #wrap_des_pr {margin-top: 0 !important;margin-right:  !important;margin-bottom: 0 !important;margin-left:  !important;
+    }
+  }</style></div></div></div>
+            </div>
+         </div>
+      </div>
+  </div><div id="shopify-section-product-recommendations" class="shopify-section tp_se_cdt"><div class="related product-extra mt__60 lazyload lazypreload" data-baseurl="/recommendations/products" id="pr_recommendations" data-id="6650349715622" data-limit="6" data-type="3" data-expands="-1"><div class="lds_bginfinity pr"></div></div></div><div id="shopify-section-recently_viewed" class="shopify-section tp_se_cdt"></div></div>
+<script type="application/ld+json">{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "iPhone Selfie Hülle",
+  "url": "https://packket.de/products/iphone-selfie-huelle","image": [
+      "https://cdn.shopify.com/s/files/1/0483/4187/6902/products/1270601765892_743x.png?v=1617286040"
+    ],"description": "﻿Hinweis: Je nach iPhone-Modell kann die Form des Ringlichts variieren.Deine Fotos sind nie richtig ausgeleuchtet?Du weißt nicht wie dein Foto aussieht bevor der Blitz auslöst und musst unzählige Fotos machen, bis endlich eins passt?Mit unserer neuen Flash Light Hülle trägst du die passende Beleuchtung immer bei dir und das auf Knopfdruck!✔️ Optimale Beleuchtung für Front- und Hauptkamera✔️ Kostengünstig und perfekt für Social Media✔️ 3 Lichtvarianten für jeden Anlass: kaltes, warmes und gemischtes Licht✔️ Einfache Bedienung mit lediglich einem Knopf✔️ Schlankes und zeitloses Design✔️ Langlebige Materialien✔️ Schützt die Oberfläche vor Abnutzungen, Kratzern, Schmutz, Fingerabdrücken, Stößen und dem täglichen Gebrauch✔️ 14 Tage Geld-zurück-GarantieBestelle noch heute und erhalte weitere 10% Rabatt mit dem Code FREE10!*Alle unsere Artikel sind nur für kurze Zeit erhältlich.",
+  "sku": "CJSJBHIP02108-White-Iphone 12 pro max",
+  "mpn": "",
+  "productID": "6650349715622",
+  "brand": {
+    "@type": "Thing",
+    "name": "PACKKET"
+  },"offers": {
+        "@type" : "Offer",
+        "sku": "CJSJBHIP02108-White-Iphone 12 pro max",
+        "availability" : "http://schema.org/InStock",
+        "price" : "49.95",
+        "priceCurrency" : "EUR",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url" : "https://packket.de/products/iphone-selfie-huelle",
+        "mpn": "","priceValidUntil": "2022-04-05"
+  }}
+</script>
+
+ 
+ <div id="Areviewsapp" class="page-full"><link href="css/reviews_online.css" rel="stylesheet" type="text/css" media="all"><script src="https://areviewsapp.com/js_codes/areviews_main_jscodes.js" defer></script><div id="az_reviews" class="az_reviews AReviewsApp" data-product_id="6650349715622"></div><script type="text/javascript">var customer_id = null;var success = false;var counter = 0;</script><script>var product_id = document.getElementById('az_reviews').dataset.product_id;</script><script src="js/areviews_app.js"></script><script>jQuery('#az_reviews').html('<img class=\'areviews_loading\' style=\'width: 180px; display: block; margin: 0 auto;\' src=\'https://areviewsapp.com/images/loading_icons/default/loading.gif\'>');</script></div></div>
+    <footer id="nt_footer" class="bgbl footer-1"><div id="shopify-section-footer_top" class="shopify-section footer__top type_instagram"><div class="footer__top_wrap footer_sticky_false footer_collapse_true nt_bg_overlay pr oh pb__30 pt__80">
+   <div class="container pr z_100">
+      <div class="row"><div class="col-lg-4 col-md-6 col-12 mb__50 order-lg-1 order-1"><aside id="block_1581507819652" class="widget widget_text widget_logo"><h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">BLEIB IN KONTAKT</span><span class="nav_link_icon ml__5"></span></h3><div class="textwidget widget_footer tl_md tl">
+		                  <div class="footer-contact"><p><i class="pegk pe-7s-mail"></i><span> <a href="mailto:info@packket.de">info@packket.de</a></span></p><div class="nt-social border_ black_"><a data-no-instant rel="noopener noreferrer nofollow" href="https://facebook.com/packketDE" target="_blank" class="facebook cb ttip_nt tooltip_top"><span class="tt_txt">Auf Facebook folgen</span><i class="facl facl-facebook"></i></a><a data-no-instant rel="noopener noreferrer nofollow" href="https://instagram.com/packket_de" target="_blank" class="instagram cb ttip_nt tooltip_top"><span class="tt_txt">Auf Instagram folgen</span><i class="facl facl-instagram"></i></a></div>
+
+</div>
+		               </div>
+		            </aside></div><div class="col-lg-4 col-md-6 col-12 mb__50 order-lg-2 order-1"><aside id="block_1581507840818" class="widget widget_nav_menu"><h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">LINKS</span><span class="nav_link_icon ml__5"></span></h3><div class="menu_footer widget_footer"><ul class="menu"><li class="menu-item"><a href="/pages/kontakt">Kontakt</a></li><li class="menu-item"><a href="/pages/widerrufsbelehrung">Widerrufsbelehrung</a></li><li class="menu-item"><a href="/pages/impressum">Impressum</a></li><li class="menu-item"><a href="/pages/agb">AGB</a></li><li class="menu-item"><a href="/pages/datenschutz">Datenschutz</a></li></ul></div>
+		            </aside></div><div class="col-lg-4 col-md-6 col-12 mb__50 order-lg-3 order-1"><aside id="block_1581507835369" class="widget widget_text"><h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">MIT ANGEBOTEN SICHER & SCHLAU SPAREN!</span><span class="nav_link_icon ml__5"></span></h3><div class="textwidget widget_footer newl_des_3">
+		                  <p>Abonniere unseren Newsletter und profitiere zuerst von neuen Rabatten und Angeboten.  Limitierte & exklusive Produkte - NUR HIER!</p><form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="js_mail_agree mc4wp-form pr z_100"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter">
+        <div class="mc4wp-form-fields">
+           <div class="signup-newsletter-form row no-gutters pr oh ">
+              <div class="col-md col-12 col_email"><input type="email" name="contact[email]" placeholder="Deine Emailadresse" value class="tc tl_md class_ip input-text" required="required"></div>
+              <div class="col-md-auto col-12"><button type="submit" class="btn_new_icon_true w__100 submit-btn truncate"><span>Abonnieren</span></button></div>
+           </div></div>
+         <div class="mc4wp-response"></div></form></div>
+		            </aside></div></div>
+   </div>
+</div><style data-shopify>.footer__top a:hover{color: #a26b25}.footer__top .signup-newsletter-form,.footer__top .signup-newsletter-form input.input-text {background-color: transparent;}.footer__top .signup-newsletter-form input.input-text {color: #878787 }.footer__top .signup-newsletter-form .submit-btn {background-color: #222222 }.footer__top .widget-title { color: #222222 }.footer__top a:not(:hover) { color: #878787 }.footer__top .signup-newsletter-form{ border-color: #878787 }.footer__top .nt_bg_overlay:after{ background-color: #000000;opacity: 0.0 }.footer__top_wrap {background-color: #f6f6f8;background-repeat: no-repeat;background-size: cover;background-attachment: scroll;background-position: center center;color:#878787 }</style></div><div id="shopify-section-footer_bot" class="shopify-section footer__bot">  <div class="footer__bot_wrap pt__20 pb__20">
+   <div class="container pr tc">
+      <div class="row"><div class="col-lg-6 col-md-12 col-12 col_1">Copyright © 2021 <span class="cp">PACKKET</span></div></div>
+   </div>
+</div><style data-shopify>.footer__bot_wrap a:hover{color: #a26b25}.footer__bot_wrap {background-color: #ffffff;color:#878787}.footer__bot a:not(:hover) { color: #878787 }</style></div></footer>
+  </div><script type="application/ld+json">{"@context": "http://schema.org","@type": "Organization","name": "PACKKET","logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/files\/PACKKET_Logo_Schwarz_Neu_778x.png?v=1603809930","sameAs": ["","https:\/\/facebook.com\/packketDE","","","https:\/\/instagram.com\/packket_de","","","","",""],"url": "https:\/\/packket.de","address": {"@type": "PostalAddress","streetAddress": "Echterneinweg 11","addressLocality": "Kirchlengern","addressRegion": "","postalCode": "32278","addressCountry": "Deutschland"},"contactPoint": [{ "@type": "ContactPoint","telephone": "0211 46862799","contactType": "customer service"}] }</script><a id="nt_backtop" class="pf br__50 z__100 des_bt1" href="/"><span class="tc br__50 db cw"><i class="pr pegk pe-7s-angle-up"></i></span></a>
+<div id="order_day" class="dn">Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag</div><div id="order_mth" class="dn">Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember</div><div id="js_we_stcl" class="dn">Nicht genügend Artikel verfügbar. Nur noch [max] übrig.</div><a rel="nofollow" id="wis_ntjs" class="dn" data-get="/search" href="/search/?view=wish"><span class="txt_add">Zur Wunschliste hinzufügen</span><span class="txt_view">Wunschliste durchsuchen</span><span class="txt_remve">Von der Wunschliste entfernen</span></a><div class="pswp pswp_t4_js dn pswp_tp_light" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"> <div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"> <div class="pswp__top-bar"> <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button> <div class="pswp__preloader"> <div class="pswp__preloader__icn"> <div class="pswp__preloader__cut"> <div class="pswp__preloader__donut"></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"> <div class="pswp__share-tooltip"></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"> </button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"> </button> <div class="pswp__caption"> <div class="pswp__caption__center"></div></div></div></div><div class="pswp__thumbnails"></div></div>
+<div class="mask-overlay ntpf t__0 r__0 l__0 b__0 op__0 pe_none"></div><div id="shopify-section-cart_widget" class="shopify-section"><div id="nt_cart_canvas" class="nt_fk_canvas dn">
+   <form action="/cart" method="post" novalidate class="nt_mini_cart nt_js_cart flex column h__100 btns_cart_1">
+      <input type="hidden" name="attributes[cat_mb_items_per_row]" value><input type="hidden" name="attributes[cat_tb_items_per_row]" value><input type="hidden" name="attributes[cat_dk_items_per_row]" value>
+      <input type="hidden" name="attributes[auto_hide_ofsock]" value><input type="hidden" name="attributes[paginate_ntt4]" value><input type="hidden" name="attributes[limit_ntt4]" value><input type="hidden" name="attributes[use_bar_lmntt4]" value>
+      <div class="mini_cart_header flex fl_between al_center"><div class="h3 widget-title tu fs__16 mg__0">Warenkorb</div><i class="close_pp pegk pe-7s-close ts__03 cd"></i></div><div class="mini_cart_wrap">
+         <div class="mini_cart_content fixcl-scroll">
+            <div class="fixcl-scroll-content">
+               <div class="empty tc mt__40"><i class="las la-shopping-bag pr mb__10"></i><p>Ihr Warenkorb ist leer.</p><p class="return-to-shop mb__15"><a class="button button_primary tu js_add_ld" href="/collections/all"><span class="truncate">Zurück zum Shop</span></a></p></div>
+               <div class="cookie-message dn">Aktivieren Sie Cookies, um den Warenkorb zu verwenden</div><div class="mini_cart_items js_cat_items" data-include="/cart/?view=viewjs"><div class="lds_bginfinity pr mt__10 mb__20"></div></div><div class="mini_cart_tool js_cart_tool tc  dn"><div data-id="note" class="mini_cart_tool_note js_cart_tls ttip_nt tooltip_top">
+                    <span class="txt_add_note "><i class="lar la-clipboard"></i><span class="tt_txt">Bestellhinweis hinzufügen</span></span>
+                    <span class="txt_edit_note dn"><i class="las la-clipboard-list"></i><span class="tt_txt">Bestellhinweis bearbeiten</span></span></div><div data-id="ship" class="mini_cart_tool_ship js_cart_tls ttip_nt tooltip_top"><i class="las la-truck-moving"></i><span class="tt_txt">Versand schätzen</span></div><div data-id="dis" class="mini_cart_tool_dis js_cart_tls ttip_nt tooltip_top"><i class="las la-tag"></i><span class="tt_txt">Fügen Sie einen Gutschein hinzu</span></div></div></div>
+         </div>
+         <div class="mini_cart_footer js_cart_footer dn">
+            <div class="js_cat_dics"></div><div class="total row fl_between al_center">
+                        <div class="col-auto"><strong>Zwischensumme:</strong></div>
+                        <div class="col-auto tr js_cat_ttprice"><div class="cart_tot_price">€0,00</div>
+                        </div>
+                     </div><p class="txt_tax_ship mb__5 fs__12">Steuern, Versand- und Rabattcodes werden an der Kasse berechnet
+</p><p class="pr db mb__5 fs__12"><input type="checkbox" id="cart_agree" class="js_agree_ck mr__5" name="ck_lumise"><label for="cart_agree">Ich stimme den <a href="/pages/agb" class="text-link">Nutzungsbedingungen</a> zu.
+</label><svg class="dn scl_selected"><use xlink:href="https://packket.de/products/iphone-selfie-huelle#scl_selected"/></svg></p><a href="/cart" class="button btn-cart tc mt__10 mb__10 js_add_ld"><span class="truncate">Warenkorb ansehen</span></a><button type="submit" data-confirm="ck_lumise" name="checkout" class="button btn-checkout mt__10 mb__10 js_add_ld truncate">Zur Kasse</button><div class="additional_checkout_buttons additional-checkout-buttons--vertical mt__10 mb__10"><div class="dynamic-checkout__content" id="dynamic-checkout-cart" data-shopify="dynamic-checkout-cart"></div></div></div>
+      </div><div class="mini_cart_note pe_none">             
+         <label for="CartSpecialInstructions" class="mb__5 dib"><span class="txt_add_note ">Bestellhinweis hinzufügen</span><span class="txt_edit_note dn">Bestellhinweis bearbeiten</span></label>
+         <textarea name="note" id="CartSpecialInstructions" placeholder="Wie können wir Ihnen helfen?"></textarea>
+         <input type="button" class="button btn_back js_cart_tls_back mt__15 mb__10" value="Sparen">
+         <input type="button" class="button btn_back btn_back2 js_cart_tls_back" value="Abbrechen">
+      </div><div class="mini_cart_ship pe_none">
+         <div class="shipping_calculator">
+           <h3>Versand schätzen</h3>
+             <p class="field">
+               <label for="address_country_ship">Land</label>
+               <select id="address_country_ship" data-include="/cart/?view=ship" data-default="Germany"></select>
+             </p>
+             <p class="field" id="address_province_container_ship" style="display:none">
+               <label for="address_province_ship" id="address_province_label">Provinz</label>
+               <select id="address_province_ship" data-default></select>
+             </p>  
+             <p class="field">
+               <label for="address_zip_ship">PLZ</label>
+               <input type="text" id="address_zip_ship">
+             </p>
+             <p class="field">
+               <input type="button" class="get_rates button" value="Berechnen Sie Versandkosten">
+             </p>
+             <p class="field">
+               <input type="button" class="button btn_back js_cart_tls_back" value="Abbrechen">
+             </p>
+             <div id="response_calcship"></div>
+         </div>
+      </div><div class="mini_cart_dis pe_none">
+        <div class="shipping_calculator">
+         <h3>Fügen Sie einen Gutschein hinzu</h3>
+         <p>Der Gutscheincode funktioniert auf der Checkout-Seite</p>
+         <p class="field">
+           <input type="text" name="discount" id="Cartdiscode" value placeholder="Gutschein Code">
+         </p>
+         <p class="field">
+           <input type="button" class="button btn_back js_cart_save js_cart_tls_back" value="Sparen">
+         </p>
+         <input type="button" class="button btn_back btn_back2 js_cart_tls_back" value="Abbrechen">
+       </div>
+      </div></form>
+</div></div><div id="nt_menu_canvas" class="nt_fk_canvas nt_sleft dn lazyload" data-include="/search/?view=mn"></div>
+<i class="close_pp pegk pe-7s-close ts__03 cd close_mn_t4 ntpf op__0 pe_none"></i><div id="sp_notices_wrapper"></div><div id="nt_login_canvas" class="nt_fk_canvas dn lazyload" data-include="/cart/?view=login"><div class="lds_bginfinity pr"></div></div><div id="nt_search_canvas" class="nt_fk_canvas dn" data-include="/search?q=&view=pp"></div><div id="shopify-section-sticky_atc" class="shopify-section"><div class="sticky_atc_wrap mobile_true pf b__0 l__0 r__0 pt__10 pb__10 bgw z_100">
+   <div class="container">
+      <div class="row al_center fl_center">
+         <div class="col sticky_atc_content">
+           <div class="row no-gutters al_center">
+             <div class="col-auto sticky_atc_thumb mr__10 flex al_center"><img alt src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_%7Bwidth%7Dx.jpg?v=1617286040" data-widths="[75, 150]" data-sizes="auto" class="js_fgr_img lazyload w__100 lz_op_ef"> 
+             </div>
+             <div class="col sticky_atc_info">
+                <h4 class="fs__14 mg__0">iPhone Selfie Hülle</h4><select name="id" class="hide hidden js_sticky_sl" data-select-sticky_atc><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724073638" selected="selected">Weiß / iPhone 12 Pro Max</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642723909798">Weiß / iPhone 12 Pro</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724368550">Weiß / iPhone 12</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724008102">Weiß / iPhone 11 Pro Max</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724270246">Weiß / iPhone 11 Pro</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724565158">Weiß / iPhone 11</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724597926">Weiß / iPhone XR</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724204710">Weiß / iPhone XS</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724663462">Weiß / iPhone X</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642723942566">Weiß / iPhone 8 Plus</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724139174">Weiß / iPhone 8</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724499622">Weiß / iPhone 7 Plus</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/3403790361143_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724171942">Weiß / iPhone 7</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724106406">Blau / iPhone 12 Pro Max</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724237478">Blau / iPhone 12 Pro</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724434086">Blau / iPhone 12</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724040870">Blau / iPhone 11 Pro Max</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724303014">Blau / iPhone 11 Pro</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724401318">Blau / iPhone 11</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724466854">Blau / iPhone XR</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724335782">Blau / iPhone XS</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724630694">Blau / iPhone X</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642723975334">Blau / iPhone 8 Plus</option><option data-img="//cdn.shopify.com/s/files/1/0483/4187/6902/products/2012059926829_1x1.jpg?v=1617286040" data-ogprice="6995" data-price="4995" value="39642724532390">Blau / iPhone 7 Plus</option></select>
+                    <span class="txt_under sticky_atc_a cp fwm">Weiß / iPhone 12 Pro Max</span></div>
+           </div>
+         </div>
+         <div class="col-auto sticky_atc_btn variations_form flex wrap al_center fl_center"><div class="txt_under sticky_atc_a cp fwm dn tc truncate mr__10">Weiß / iPhone 12 Pro Max</div><div class="sticky_atc_price"><del>€69,95</del> <ins>€49,95</ins>
+</div><div class="quantity pr ml__10 mr__10">
+            <input type="number" class="input-text qty text tc js_sticky_qty" step="1" min="0" max="9999" name="quantity" value="1" size="4" pattern="[0-9]*" inputmode="numeric">
+            <div class="qty tc fs__14"> <a rel="nofollow" data-no-instant class="plus db cb pa pr__15 tr r__0" href="#"> <i class="facl facl-plus"></i> </a> <a rel="nofollow" data-no-instant class="minus db cb pa pl__15 tl l__0" href="#"> <i class="facl facl-minus"></i> </a></div>
+          </div><button data-time="6000" data-ani="none" class="single_add_to_cart_button button truncate sticky_atc_js disabled"><span class="txt_add">In den Warenkorb legen</span><span class="txt_pre dn">Vorbestellen</span></button>
+         </div>
+      </div>
+   </div>
+</div>
+<style>
+.sticky_atc_wrap{z-index:340;box-shadow:0 0 9px rgba(0,0,0,.12);transition:-webkit-transform .25s ease;transition:transform .25s ease;transition:transform .25s ease,-webkit-transform .25s ease;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}.sticky_atc_wrap.sticky_atc_shown{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.sticky_atc_thumb{min-height:75px;}.sticky_atc_thumb img{max-height:75px;max-width:65px;width:auto}.sticky_atc_a{font-size:13px;cursor:pointer}.sticky_atc_btn .quantity{border-radius:2px;border-color:#ddd}.sticky_atc_btn .single_add_to_cart_button{border-radius:2px;box-shadow:inset 0 -2px 0 rgba(0,0,0,.15)}.sticky_atc_info&gt;h4{color:#222}.sticky_atc_price{font-size:16px}.sticky_atc_price ins{text-decoration:none}#nt_backtop.sticky_atc_shown{bottom:105px}.popup_slpr_wrap.sticky_atc_shown{bottom:105px}@media (max-width:1024px){.kalles_toolbar_true .sticky_atc_wrap{bottom:55px}.kalles_toolbar_true #nt_backtop.sticky_atc_shown,.kalles_toolbar_true .popup_slpr_wrap.sticky_atc_shown{bottom:160px}}
+@media (max-width: 767px) {.sticky_atc_content{display:none}.sticky_atc_btn .txt_under{display:block;font-size:14px}}
+@media (max-width:575px){.sticky_atc_btn .txt_under{width:100%;min-width:100%;margin:0 0 10px}.sticky_atc_price{display:none}.sticky_atc_btn{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%;padding:0 2px}.sticky_atc_btn .single_add_to_cart_button{width:100%;margin:0;-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.sticky_atc_btn .quantity{margin-left:0}}
+</style></div><div id="shopify-section-toolbar_mobile" class="shopify-section"><div class="kalles_toolbar kalles_toolbar_label_true ntpf r__0 l__0 b__0 flex fl_between al_center"><div class="type_toolbar_shop kalles_toolbar_item">
+      <a href="/collections/alle-produkte">
+        <span class="toolbar_icon"></span><span class="kalles_toolbar_label">Shop</span></a>
+   </div><div class="type_toolbar_filter kalles_toolbar_item dn">
+        <a class="dt_trigger_cl" rel="nofollow" data-no-instant href="#" data-trigger=".btn_filter">
+          <span class="toolbar_icon"></span><span class="kalles_toolbar_label">Filter</span></a>
+      </div><div class="type_toolbar_wish kalles_toolbar_item">
+        <a rel="nofollow" class="js_link_wis" href="/search/?view=wish">
+          <span class="toolbar_icon"><span class="jswcount toolbar_count">0</span></span><span class="kalles_toolbar_label">Wunschliste</span></a>
+      </div></div></div><div id="snow_ef_t4" class="dn"></div><div id="gliconsymbols" class="hide dn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="scl_remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/> </svg> </symbol> <symbol id="scl_edit"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/> </svg> </symbol> <symbol id="scl_selected"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 20l-7-7 3-3 4 4L19 4l3 3z"/></svg></symbol></svg></div>
+
+
+<script>
+    window.cjpod = window.cjpod || {};
+</script>
+
+  
+<script>
+      window.cjpod.product = window.cjpod.product || {"id":6650349715622,"title":"iPhone Selfie Hülle","handle":"iphone-selfie-huelle","description":"\u003cdiv style=\"font-size: 1.2em;\" data-mce-style=\"font-size: 1.2em;\"\u003e\n\u003cp\u003e﻿Hinweis: Je nach iPhone-Modell kann die Form des Ringlichts variieren.\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eDeine Fotos sind nie richtig ausgeleuchtet?\u003c\/strong\u003e\u003cbr\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eDu weißt nicht wie dein Foto aussieht bevor der Blitz auslöst und musst unzählige Fotos machen, bis endlich eins passt?\u003c\/strong\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eMit unserer neuen Flash Light Hülle trägst du die passende Beleuchtung immer bei dir und das auf Knopfdruck!\u003c\/strong\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cimg src=\"https:\/\/media.giphy.com\/media\/LPCxEYZQyXPzhtrzgt\/giphy.gif\" style=\"display: block; margin-left: auto; margin-right: auto;\"\u003e\u003c\/strong\u003e\u003c\/p\u003e\n\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e✔️ \u003cstrong\u003eOptimale Beleuchtung\u003c\/strong\u003e für Front- und Hauptkamera\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\u003cspan\u003e✔️ Kostengünstig und \u003cstrong\u003eperfekt für Social Media\u003c\/strong\u003e\u003c\/span\u003e\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e✔️ 3\u003cstrong\u003e Lichtvarianten \u003c\/strong\u003efür jeden Anlass: \u003cstrong\u003ekaltes, warmes und gemischtes Licht\u003c\/strong\u003e\n\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\n\u003cstrong\u003e\u003cspan data-mce-fragment=\"1\"\u003e✔️ Einfache Bedienung \u003c\/span\u003e\u003c\/strong\u003e\u003cspan data-mce-fragment=\"1\"\u003emit lediglich einem Knopf\u003c\/span\u003e\n\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\u003cspan data-mce-fragment=\"1\"\u003e✔️ \u003cstrong data-mce-fragment=\"1\"\u003eSchlankes \u003c\/strong\u003eund \u003cstrong\u003ezeitloses Design\u003c\/strong\u003e\u003c\/span\u003e\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\u003cspan data-mce-fragment=\"1\"\u003e\u003cstrong\u003e✔️ Langlebige Materialien\u003c\/strong\u003e\u003c\/span\u003e\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\n\u003cstrong\u003e\u003cspan data-mce-fragment=\"1\"\u003e✔️ \u003c\/span\u003eSchützt\u003c\/strong\u003e \u003cstrong\u003edie Oberfläche\u003c\/strong\u003e vor Abnutzungen, Kratzern, Schmutz, Fingerabdrücken, Stößen und dem täglichen Gebrauch\u003cspan data-mce-fragment=\"1\"\u003e\u003cbr data-mce-fragment=\"1\"\u003e\u003c\/span\u003e\u003cstrong data-mce-fragment=\"1\"\u003e✔️ 14 Tage Geld-zurück-Garantie\u003c\/strong\u003e\n\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\u003cstrong data-mce-fragment=\"1\"\u003e\u003c\/strong\u003e\u003c\/div\u003e\n\u003cp\u003e\u003cbr\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cimg alt=\"\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/files\/Ring_Light_1_480x480.gif?v=1617294142\" style=\"display: block; margin-left: auto; margin-right: auto;\"\u003e\u003c\/p\u003e\n\u003ch2 data-mce-fragment=\"1\"\u003e\n\u003cstrong\u003eB\u003c\/strong\u003eestelle noch heute und erhalte weitere \u003cstrong data-mce-fragment=\"1\"\u003e\u003cspan style=\"color: #a36d26;\" data-mce-fragment=\"1\" data-mce-style=\"color: #a36d26;\"\u003e10% Rabatt\u003c\/span\u003e\u003c\/strong\u003e mit dem Code\u003cstrong data-mce-fragment=\"1\"\u003e\u003cspan style=\"color: #a36d26;\" data-mce-fragment=\"1\" data-mce-style=\"color: #a36d26;\"\u003e FREE10\u003c\/span\u003e!*\u003c\/strong\u003e\u003cstrong data-mce-fragment=\"1\"\u003e\u003c\/strong\u003e\n\u003c\/h2\u003e\n\u003cp style=\"text-align: left;\" data-mce-fragment=\"1\" data-mce-style=\"text-align: left;\"\u003e\u003cstrong data-mce-fragment=\"1\"\u003eAlle unsere Artikel sind nur für kurze Zeit erhältlich.\u003cbr\u003e\u003c\/strong\u003e\u003c\/p\u003e","published_at":"2021-04-01T13:40:43+02:00","created_at":"2021-04-01T10:38:15+02:00","vendor":"PACKKET","type":"Handyhülle","tags":[],"price":4995,"price_min":4995,"price_max":4995,"available":true,"price_varies":false,"compare_at_price":6995,"compare_at_price_min":6995,"compare_at_price_max":6995,"compare_at_price_varies":false,"variants":[{"id":39642724073638,"title":"Weiß \/ iPhone 12 Pro Max","option1":"Weiß","option2":"iPhone 12 Pro Max","option3":null,"sku":"CJSJBHIP02108-White-Iphone 12 pro max","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 12 Pro Max","public_title":"Weiß \/ iPhone 12 Pro Max","options":["Weiß","iPhone 12 Pro Max"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642723909798,"title":"Weiß \/ iPhone 12 Pro","option1":"Weiß","option2":"iPhone 12 Pro","option3":null,"sku":"CJSJBHIP02108-White-12pro","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 12 Pro","public_title":"Weiß \/ iPhone 12 Pro","options":["Weiß","iPhone 12 Pro"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724368550,"title":"Weiß \/ iPhone 12","option1":"Weiß","option2":"iPhone 12","option3":null,"sku":"CJSJBHIP02108-White-IPhone 12","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 12","public_title":"Weiß \/ iPhone 12","options":["Weiß","iPhone 12"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724008102,"title":"Weiß \/ iPhone 11 Pro Max","option1":"Weiß","option2":"iPhone 11 Pro Max","option3":null,"sku":"CJSJBHIP02108-White-IPhone 11 pro max","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 11 Pro Max","public_title":"Weiß \/ iPhone 11 Pro Max","options":["Weiß","iPhone 11 Pro Max"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724270246,"title":"Weiß \/ iPhone 11 Pro","option1":"Weiß","option2":"iPhone 11 Pro","option3":null,"sku":"CJSJBHIP02108-White-IPhone 11 pro","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 11 Pro","public_title":"Weiß \/ iPhone 11 Pro","options":["Weiß","iPhone 11 Pro"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724565158,"title":"Weiß \/ iPhone 11","option1":"Weiß","option2":"iPhone 11","option3":null,"sku":"CJSJBHIP02108-White-IPhone 11","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 11","public_title":"Weiß \/ iPhone 11","options":["Weiß","iPhone 11"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724597926,"title":"Weiß \/ iPhone XR","option1":"Weiß","option2":"iPhone XR","option3":null,"sku":"CJSJBHIP02108-White-IPhone XR","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone XR","public_title":"Weiß \/ iPhone XR","options":["Weiß","iPhone XR"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724204710,"title":"Weiß \/ iPhone XS","option1":"Weiß","option2":"iPhone XS","option3":null,"sku":"CJSJBHIP02108-white-IphoneXS","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone XS","public_title":"Weiß \/ iPhone XS","options":["Weiß","iPhone XS"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724663462,"title":"Weiß \/ iPhone X","option1":"Weiß","option2":"iPhone X","option3":null,"sku":"CJSJBHIP02108-White-iPhoneX","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone X","public_title":"Weiß \/ iPhone X","options":["Weiß","iPhone X"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642723942566,"title":"Weiß \/ iPhone 8 Plus","option1":"Weiß","option2":"iPhone 8 Plus","option3":null,"sku":"CJSJBHIP02108-White-8plus","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 8 Plus","public_title":"Weiß \/ iPhone 8 Plus","options":["Weiß","iPhone 8 Plus"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724139174,"title":"Weiß \/ iPhone 8","option1":"Weiß","option2":"iPhone 8","option3":null,"sku":"CJSJBHIP02108-white-Iphone8","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 8","public_title":"Weiß \/ iPhone 8","options":["Weiß","iPhone 8"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724499622,"title":"Weiß \/ iPhone 7 Plus","option1":"Weiß","option2":"iPhone 7 Plus","option3":null,"sku":"CJSJBHIP02108-White-iPhone7 plus","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 7 Plus","public_title":"Weiß \/ iPhone 7 Plus","options":["Weiß","iPhone 7 Plus"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724171942,"title":"Weiß \/ iPhone 7","option1":"Weiß","option2":"iPhone 7","option3":null,"sku":"CJSJBHIP02108-white-Iphone7","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528066214,"product_id":6650349715622,"position":3,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","variant_ids":[39642723909798,39642723942566,39642724008102,39642724073638,39642724139174,39642724171942,39642724204710,39642724270246,39642724368550,39642724499622,39642724565158,39642724597926,39642724663462]},"available":true,"name":"iPhone Selfie Hülle - Weiß \/ iPhone 7","public_title":"Weiß \/ iPhone 7","options":["Weiß","iPhone 7"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724106406,"title":"Blau \/ iPhone 12 Pro Max","option1":"Blau","option2":"iPhone 12 Pro Max","option3":null,"sku":"CJSJBHIP02108-Blue-Iphone 12 pro max","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone 12 Pro Max","public_title":"Blau \/ iPhone 12 Pro Max","options":["Blau","iPhone 12 Pro Max"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724237478,"title":"Blau \/ iPhone 12 Pro","option1":"Blau","option2":"iPhone 12 Pro","option3":null,"sku":"CJSJBHIP02108-Blue-12pro","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone 12 Pro","public_title":"Blau \/ iPhone 12 Pro","options":["Blau","iPhone 12 Pro"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724434086,"title":"Blau \/ iPhone 12","option1":"Blau","option2":"iPhone 12","option3":null,"sku":"CJSJBHIP02108-Blue-IPhone 12","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone 12","public_title":"Blau \/ iPhone 12","options":["Blau","iPhone 12"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724040870,"title":"Blau \/ iPhone 11 Pro Max","option1":"Blau","option2":"iPhone 11 Pro Max","option3":null,"sku":"CJSJBHIP02108-Blue-IPhone 11 pro max","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone 11 Pro Max","public_title":"Blau \/ iPhone 11 Pro Max","options":["Blau","iPhone 11 Pro Max"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724303014,"title":"Blau \/ iPhone 11 Pro","option1":"Blau","option2":"iPhone 11 Pro","option3":null,"sku":"CJSJBHIP02108-Blue-IPhone 11 pro","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone 11 Pro","public_title":"Blau \/ iPhone 11 Pro","options":["Blau","iPhone 11 Pro"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724401318,"title":"Blau \/ iPhone 11","option1":"Blau","option2":"iPhone 11","option3":null,"sku":"CJSJBHIP02108-Blue-IPhone 11","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone 11","public_title":"Blau \/ iPhone 11","options":["Blau","iPhone 11"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724466854,"title":"Blau \/ iPhone XR","option1":"Blau","option2":"iPhone XR","option3":null,"sku":"CJSJBHIP02108-Blue-IPhone XR","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone XR","public_title":"Blau \/ iPhone XR","options":["Blau","iPhone XR"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724335782,"title":"Blau \/ iPhone XS","option1":"Blau","option2":"iPhone XS","option3":null,"sku":"CJSJBHIP02108-Blue-IphoneXS","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone XS","public_title":"Blau \/ iPhone XS","options":["Blau","iPhone XS"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724630694,"title":"Blau \/ iPhone X","option1":"Blau","option2":"iPhone X","option3":null,"sku":"CJSJBHIP02108-Blue-iPhoneX","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone X","public_title":"Blau \/ iPhone X","options":["Blau","iPhone X"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642723975334,"title":"Blau \/ iPhone 8 Plus","option1":"Blau","option2":"iPhone 8 Plus","option3":null,"sku":"CJSJBHIP02108-Blue-8plus","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone 8 Plus","public_title":"Blau \/ iPhone 8 Plus","options":["Blau","iPhone 8 Plus"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]},{"id":39642724532390,"title":"Blau \/ iPhone 7 Plus","option1":"Blau","option2":"iPhone 7 Plus","option3":null,"sku":"CJSJBHIP02108-Blue-iPhone7 plus","requires_shipping":true,"taxable":false,"featured_image":{"id":28457528098982,"product_id":6650349715622,"position":4,"created_at":"2021-04-01T10:38:15+02:00","updated_at":"2021-04-01T16:07:20+02:00","alt":null,"width":1545,"height":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040","variant_ids":[39642723975334,39642724040870,39642724106406,39642724237478,39642724303014,39642724335782,39642724401318,39642724434086,39642724466854,39642724532390,39642724630694]},"available":true,"name":"iPhone Selfie Hülle - Blau \/ iPhone 7 Plus","public_title":"Blau \/ iPhone 7 Plus","options":["Blau","iPhone 7 Plus"],"price":4995,"weight":90,"compare_at_price":6995,"inventory_management":null,"barcode":"","featured_media":{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"}},"requires_selling_plan":false,"selling_plan_allocations":[]}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/1270601765892.png?v=1617286040","\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/345651943799.jpg?v=1617286040","\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617286040","\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617286040"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/1270601765892.png?v=1617286040","options":["Farbe","Model"],"media":[{"alt":null,"id":20778290086054,"position":1,"preview_image":{"aspect_ratio":1.064,"height":698,"width":743,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/1270601765892.png?v=1617266295"},"aspect_ratio":1.064,"height":698,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/1270601765892.png?v=1617266295","width":743},{"alt":null,"id":20778289954982,"position":2,"preview_image":{"aspect_ratio":1.0,"height":800,"width":800,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/345651943799.jpg?v=1617266295"},"aspect_ratio":1.0,"height":800,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/345651943799.jpg?v=1617266295","width":800},{"alt":null,"id":20778290118822,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295"},"aspect_ratio":1.0,"height":1545,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/3403790361143.jpg?v=1617266295","width":1545},{"alt":null,"id":20778290151590,"position":4,"preview_image":{"aspect_ratio":1.0,"height":1545,"width":1545,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295"},"aspect_ratio":1.0,"height":1545,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/products\/2012059926829.jpg?v=1617266295","width":1545}],"requires_selling_plan":false,"selling_plan_groups":[],"content":"\u003cdiv style=\"font-size: 1.2em;\" data-mce-style=\"font-size: 1.2em;\"\u003e\n\u003cp\u003e﻿Hinweis: Je nach iPhone-Modell kann die Form des Ringlichts variieren.\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eDeine Fotos sind nie richtig ausgeleuchtet?\u003c\/strong\u003e\u003cbr\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eDu weißt nicht wie dein Foto aussieht bevor der Blitz auslöst und musst unzählige Fotos machen, bis endlich eins passt?\u003c\/strong\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eMit unserer neuen Flash Light Hülle trägst du die passende Beleuchtung immer bei dir und das auf Knopfdruck!\u003c\/strong\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cimg src=\"https:\/\/media.giphy.com\/media\/LPCxEYZQyXPzhtrzgt\/giphy.gif\" style=\"display: block; margin-left: auto; margin-right: auto;\"\u003e\u003c\/strong\u003e\u003c\/p\u003e\n\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e✔️ \u003cstrong\u003eOptimale Beleuchtung\u003c\/strong\u003e für Front- und Hauptkamera\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\u003cspan\u003e✔️ Kostengünstig und \u003cstrong\u003eperfekt für Social Media\u003c\/strong\u003e\u003c\/span\u003e\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e✔️ 3\u003cstrong\u003e Lichtvarianten \u003c\/strong\u003efür jeden Anlass: \u003cstrong\u003ekaltes, warmes und gemischtes Licht\u003c\/strong\u003e\n\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\n\u003cstrong\u003e\u003cspan data-mce-fragment=\"1\"\u003e✔️ Einfache Bedienung \u003c\/span\u003e\u003c\/strong\u003e\u003cspan data-mce-fragment=\"1\"\u003emit lediglich einem Knopf\u003c\/span\u003e\n\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\u003cspan data-mce-fragment=\"1\"\u003e✔️ \u003cstrong data-mce-fragment=\"1\"\u003eSchlankes \u003c\/strong\u003eund \u003cstrong\u003ezeitloses Design\u003c\/strong\u003e\u003c\/span\u003e\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\u003cspan data-mce-fragment=\"1\"\u003e\u003cstrong\u003e✔️ Langlebige Materialien\u003c\/strong\u003e\u003c\/span\u003e\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\n\u003cstrong\u003e\u003cspan data-mce-fragment=\"1\"\u003e✔️ \u003c\/span\u003eSchützt\u003c\/strong\u003e \u003cstrong\u003edie Oberfläche\u003c\/strong\u003e vor Abnutzungen, Kratzern, Schmutz, Fingerabdrücken, Stößen und dem täglichen Gebrauch\u003cspan data-mce-fragment=\"1\"\u003e\u003cbr data-mce-fragment=\"1\"\u003e\u003c\/span\u003e\u003cstrong data-mce-fragment=\"1\"\u003e✔️ 14 Tage Geld-zurück-Garantie\u003c\/strong\u003e\n\u003c\/div\u003e\n\u003cdiv style=\"font-size: 1.4em;\" data-mce-style=\"font-size: 1.4em;\"\u003e\u003cstrong data-mce-fragment=\"1\"\u003e\u003c\/strong\u003e\u003c\/div\u003e\n\u003cp\u003e\u003cbr\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cimg alt=\"\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0483\/4187\/6902\/files\/Ring_Light_1_480x480.gif?v=1617294142\" style=\"display: block; margin-left: auto; margin-right: auto;\"\u003e\u003c\/p\u003e\n\u003ch2 data-mce-fragment=\"1\"\u003e\n\u003cstrong\u003eB\u003c\/strong\u003eestelle noch heute und erhalte weitere \u003cstrong data-mce-fragment=\"1\"\u003e\u003cspan style=\"color: #a36d26;\" data-mce-fragment=\"1\" data-mce-style=\"color: #a36d26;\"\u003e10% Rabatt\u003c\/span\u003e\u003c\/strong\u003e mit dem Code\u003cstrong data-mce-fragment=\"1\"\u003e\u003cspan style=\"color: #a36d26;\" data-mce-fragment=\"1\" data-mce-style=\"color: #a36d26;\"\u003e FREE10\u003c\/span\u003e!*\u003c\/strong\u003e\u003cstrong data-mce-fragment=\"1\"\u003e\u003c\/strong\u003e\n\u003c\/h2\u003e\n\u003cp style=\"text-align: left;\" data-mce-fragment=\"1\" data-mce-style=\"text-align: left;\"\u003e\u003cstrong data-mce-fragment=\"1\"\u003eAlle unsere Artikel sind nur für kurze Zeit erhältlich.\u003cbr\u003e\u003c\/strong\u003e\u003c\/p\u003e"};
+      window.cjpod.collections = window.cjpod.collections || [{"id":263022772390,"handle":"alle-produkte","title":"Alle Produkte","updated_at":"2021-04-04T23:40:36+02:00","body_html":"","published_at":"2021-03-19T22:20:21+01:00","sort_order":"best-selling","template_suffix":"","disjunctive":false,"rules":[{"column":"variant_price","relation":"greater_than","condition":"0"}],"published_scope":"web"},{"id":263022739622,"handle":"bestseller","title":"Bestseller","updated_at":"2021-04-04T23:40:36+02:00","body_html":"","published_at":"2021-03-19T22:19:30+01:00","sort_order":"best-selling","template_suffix":"","published_scope":"web"},{"id":220069363878,"handle":"smartphone-produkte","title":"Smartphone Zubehör","updated_at":"2021-04-01T17:37:44+02:00","body_html":"","published_at":"2020-09-18T19:51:56+02:00","sort_order":"best-selling","template_suffix":"","published_scope":"web"}];
+</script>
+<script src="js/pod2.js"></script>
+  
+
+
+
+
+
+
+
+
+    <script>
+        if (typeof BC_JSON_ObjectBypass === "undefined"){
+            var BC_JSON_ObjectBypass = {"_ab":{"description":"Used in connection with access to admin.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"86400","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_secure_session_id":{"description":"Used in connection with navigation through a storefront.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"2592000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"__cfduid":{"description":"The _cfduid cookie helps Cloudflare detect malicious visitors to our Customers’ websites and minimizes blocking legitimate users.","path":"\/","domain":"","provider":"Cloudflare","type":"type_0","expires":"2592000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"Cart":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0"},"cart":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0"},"cart_sig":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0"},"cart_ts":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0"},"cart_ver":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0"},"checkout_token":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"Secret":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"secure_customer_sig":{"description":"Used in connection with customer login.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"storefront_digest":{"description":"Used in connection with customer login.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_shopify_u":{"description":"Used to facilitate updating customer account information.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"XSRF-TOKEN":{"description":"Used in connection with GDPR legal Cookie.","path":"\/","domain":"","provider":"GDPR Legal Cookie","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"gdpr_legal_cookie_session":{"description":"Used in connection with GDPR legal Cookie.","path":"\/","domain":"","provider":"GDPR Legal Cookie","type":"type_0","expires":"0","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_bc_c_set":{"description":"Used in connection with GDPR legal Cookie.","path":"\/","domain":"","provider":"GDPR Legal Cookie","type":"type_0","expires":"2592000","recommendation":"0","editable":"false","deletable":"false","set":"0","optIn":true,"live":"1"},"_tracking_consent":{"description":"For Shopify User Consent Tracking.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_shopify_m":{"description":"Used for managing customer privacy settings.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_shopify_tm":{"description":"Used for managing customer privacy settings.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_shopify_tw":{"description":"Used for managing customer privacy settings.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_storefront_u":{"description":"Used to facilitate updating customer account information.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"cart_currency":{"description":"Used in connection with cart and checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0"},"_orig_referrer":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_landing_page":{"description":"Track landing pages.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_s":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_d":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_fs":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_s":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_y":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"31536000","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_y":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"31536000","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_sa_p":{"description":"Shopify analytics relating to marketing \u0026 referrals.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_sa_t":{"description":"Shopify analytics relating to marketing \u0026 referrals.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_uniq":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"_shopify_visit":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"tracked_start_checkout":{"description":"Shopify analytics relating to checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"ki_r":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"ki_t":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"},"ab_test_*":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1"}};
+        }
+
+    </script>
+    <script>
+        const data_gdpr_legal_banner_content = {"primary":"Wir verwenden Cookies. Viele sind notwendig, um die Website und ihre Funktionen zu betreiben, andere sind für statistische oder Marketingzwecke. Mit der Entscheidung \"Nur essentielle Cookies akzeptieren\" werden wir Deine Privatsphäre respektieren und keine Cookies setzen, die nicht für den Betrieb der Seite notwendig sind.","essential":"Essenzielle Cookies ermöglichen grundlegende Funktionen und sind für die einwandfreie Funktion der Website erforderlich.","statistic":"Statistik-Cookies helfen Webseiten-Besitzern zu verstehen, wie Besucher mit Webseiten interagieren, indem Informationen anonym gesammelt und gemeldet werden.","marketing":"Marketing-Cookies werden von Drittanbietern oder Publishern verwendet, um personalisierte Werbung anzuzeigen. Sie tun dies, indem sie Besucher über Websites hinweg verfolgen.","details":"Informationen anzeigen","essential_button":"Essenzielle","marketing_button":"Statistik \u0026 Marketing","buttons":{"accept":"Alle akzeptieren","how_many_are_accepted":"von","accept_single":"Akzeptieren","save":"Nur Essentielle Cookies akzeptieren","edit":"Individuelle Cookie Einstellungen","save_close":"Speichern \u0026 schließen"},"tabs":{"name":"Name","provider":"Inhaber","description":"Beschreibung","duration":"Laufzeit"},"cookieType":{"type_0":"Essentiell","type_1":"Statistik","type_2":"Marketing"},"flag":{"text":"Cookies"}};
+    </script>
+    <style>
+        body #cookie-banner_flag {
+            position: fixed;
+            top: 70vh;
+            z-index: 100000000000;
+            background-color: #fff;
+            padding: 0px;
+            left: 4px;
+            border-radius: 14px;
+            width: 28px;
+            max-width: 28px;
+            height: 28px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: #0006 0px 0px 4px;
+            transform: rotate(0deg);
+            display: flex;
+            opacity: 0;
+        }
+        body #cookie-banner_flag__fingerprint{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 10000000000;
+            background-color: #fff;
+            border-radius: 14px;
+            padding: 2px;
+        }
+        body #cookie-banner_flag__infotext{
+            height: 28px;
+            line-height: 28px;
+            background-color: #fff;
+            color: black;
+            border-radius: 14px;
+            padding: 1px 14px 0 35px;
+            box-shadow: #0006 0px 0px 4px;
+            position: absolute;
+            top: 0px;
+            left: -20px;
+            z-index: 1;
+            width: 100px;
+            opacity: 0;
+            transform: rotate3d(0, -1, 0, 90deg);
+            transition: all 0.5s;
+        }
+        body #cookie-banner_flag:hover &gt; #cookie-banner_flag__infotext{
+            left: 0;
+            width: 100px;
+            opacity: 1;
+            transform: rotate3d(0, 0, 0, 0deg);
+            transition: all 0.5s;
+        }
+    </style>
+
+    <div id="cookie-banner_flag" hidden="hidden">
+        <div id="cookie-banner_flag__fingerprint">
+            <svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+            <g transform="matrix(1.26522,0,0,1.26522,-48.1485,-57.5756)">
+                <g transform="matrix(0.991875,-0.127215,0.127215,0.991875,-29.8048,32.7802)">
+                    <path d="M59.004,200.883C62.918,201.688 67.32,198.996 68.25,195.684C74.813,172.266 85.902,150.734 101.219,131.684C103.813,128.457 103.301,123.734 100.074,121.141C96.844,118.547 92.125,119.059 89.527,122.285C72.938,142.926 60.918,166.258 53.809,191.637C52.688,195.625 54.949,200.047 59.004,200.883Z" style="fill-rule:nonzero;"/>
+                    <path d="M420.998,299.872C424.7,300.68 428.521,297.44 429.385,294.381C430.314,291.09 431.774,284.079 432.385,276.851C433.233,266.809 433.996,254.75 433.821,245.66C433.658,237.212 432.764,228.93 431.605,220.753C429.882,208.606 427.17,196.231 423.315,184.871C418.172,169.713 411.807,154.718 403.319,141.433C368.562,87.035 310.283,49.414 241.52,49.414C195.02,49.414 149.992,66.059 114.73,96.277C111.586,98.973 111.223,103.707 113.918,106.852C116.613,109.996 121.348,110.363 124.492,107.664C157.035,79.773 198.598,64.41 241.52,64.41C304.306,64.41 357.401,98.555 389.648,147.906C397.451,159.847 403.315,173.386 408.177,187.011C412.051,197.867 414.789,209.749 416.54,221.407C417.691,229.068 418.751,236.826 418.804,244.75C418.88,256.085 418.358,266.293 417.726,274.819C417.257,281.141 415.926,287.399 414.96,291.601C414.032,295.637 416.952,298.989 420.998,299.872Z" style="fill-rule:nonzero;"/>
+                    <path d="M386.915,266.049C387.118,266.049 387.325,266.041 387.532,266.021C391.661,265.685 394.176,262.072 394.399,257.939C395.195,243.208 392.269,222.399 389.077,209.385C384.855,192.173 377.776,175.7 369.367,160.34C357.383,138.441 339.324,119.945 317.145,106.84C294.367,93.383 268.215,86.27 241.52,86.27C171.574,86.27 109.711,133.039 91.07,200.027C90.418,202.395 89.637,205.758 88.75,210.02C87.406,216.48 82.141,221.371 75.648,222.188C69.367,222.98 62.168,223.543 54.25,223.859C50.113,224.027 46.891,227.516 47.059,231.656C47.227,235.797 50.707,239.012 54.852,238.848C63.191,238.516 70.82,237.914 77.523,237.07C90.371,235.449 100.785,225.809 103.434,213.07C104.258,209.121 104.961,206.07 105.523,204.027C122.363,143.523 178.285,101.266 241.52,101.266C265.535,101.266 289.047,107.66 309.516,119.754C329.371,131.484 345.52,148.008 356.207,167.535C363.951,181.682 370.578,196.734 374.489,212.61C377.522,224.921 380.245,244.464 379.446,259.154C379.232,263.087 383.047,266.049 386.915,266.049Z" style="fill-rule:nonzero;"/>
+                    <path d="M354.164,257.132L354.379,257.132C358.422,257.132 361.758,253.913 361.871,249.843C362.062,242.972 361.788,244.606 361.738,242C361.148,211.184 348.891,182.09 327.195,160.039C324.289,157.086 319.539,157.051 316.59,159.953C313.637,162.859 313.598,167.609 316.504,170.563C335.586,189.949 346.324,215.559 346.75,242.664C346.754,242.953 346.808,243.24 346.813,243.531C346.842,245.529 347.055,243.132 346.879,249.425C346.762,253.565 350.023,257.015 354.164,257.132Z" style="fill-rule:nonzero;"/>
+                    <path d="M54.801,274.766L55.824,274.727C78.949,273.824 98.074,270.91 112.676,266.063C126.23,261.563 135.695,249.262 136.789,234.73C137,231.906 137.344,229.102 137.809,226.398C141.977,202.25 154.605,180.152 173.375,164.18C192.383,148.004 216.586,139.094 241.52,139.094C258.457,139.094 275.297,143.23 290.223,151.059C293.891,152.98 298.426,151.566 300.348,147.898C302.273,144.23 300.859,139.695 297.191,137.773C280.125,128.824 260.875,124.094 241.52,124.094C213.027,124.094 185.371,134.273 163.656,152.758C142.219,171 127.789,196.246 123.027,223.848C122.48,227.023 122.078,230.309 121.832,233.609C121.195,242.09 115.746,249.238 107.949,251.828C98.832,254.855 82.289,258.684 55.242,259.738L54.219,259.777C50.078,259.941 46.855,263.426 47.016,267.566C47.172,271.605 50.496,274.773 54.504,274.773C54.602,274.773 54.699,274.77 54.801,274.766Z" style="fill-rule:nonzero;"/>
+                    <path d="M269.329,415.66C260.953,421.617 244.688,431.914 236.133,435.664C232.34,437.328 230.613,441.754 232.273,445.547C233.508,448.359 236.262,450.035 239.148,450.035C240.152,450.035 241.176,449.832 242.156,449.402C251.355,445.371 268.472,435.293 277.22,428.414C280.479,425.852 281.833,421.609 279.654,418.086C277.47,414.567 272.703,413.261 269.329,415.66Z" style="fill-rule:nonzero;"/>
+                    <path d="M317.09,263.125C321.2,263.551 324.987,260.571 325.329,256.445C326.277,244.996 326.137,246.461 325.875,243.922C325.648,197.598 287.895,159.98 241.52,159.98C200.348,159.98 165.387,189.406 158.391,229.953C157.457,235.367 157.187,241.219 157.562,247.84C157.797,251.879 157.043,259.91 149.414,268.313C139.246,279.504 114.898,293.324 56.641,295.598C52.5,295.758 49.277,299.242 49.437,303.383C49.594,307.422 52.918,310.594 56.926,310.594C57.023,310.594 57.125,310.59 57.223,310.586C108.168,308.598 142.922,297.77 160.52,278.398C171.828,265.945 172.906,253.371 172.539,246.984C172.227,241.516 172.434,236.777 173.172,232.504C178.922,199.172 207.664,174.98 241.52,174.98C279.762,174.98 310.875,206.094 310.875,244.336C310.875,244.629 310.895,244.926 310.926,245.215C310.941,245.328 310.837,246.423 310.411,254.887C310.203,259.021 312.969,262.691 317.09,263.125Z" style="fill-rule:nonzero;"/>
+                    <path d="M270.965,376.23C268.223,373.129 263.48,372.836 260.379,375.582C235.566,397.527 202.098,412.219 160.91,419.242C156.828,419.938 154.082,423.813 154.781,427.898C155.402,431.555 158.574,434.137 162.164,434.137C162.582,434.137 163.008,434.102 163.434,434.027C207.418,426.527 243.379,410.645 270.316,386.816C273.418,384.07 273.711,379.332 270.965,376.23Z" style="fill-rule:nonzero;"/>
+                    <path d="M291.93,244.027C291.762,216.371 269.211,193.926 241.52,193.926C216.914,193.926 196.02,211.508 191.844,235.727C191.352,238.563 191.227,241.891 191.457,245.898C191.988,255.25 190.504,273.563 174.543,291.133C158.02,309.328 131.887,320.824 94.656,326.277C84.695,327.047 75.184,327.859 66.387,328.687C62.262,329.078 59.234,332.734 59.625,336.859C60.012,340.98 63.68,344.008 67.793,343.621C76.586,342.793 86.098,341.98 96.066,341.211C96.234,341.199 96.398,341.18 96.566,341.156C137.512,335.195 166.648,322.133 185.648,301.219C205.285,279.594 207.098,256.738 206.43,245.043C206.27,242.227 206.336,239.949 206.621,238.277C209.559,221.27 224.234,208.926 241.52,208.926C261.043,208.926 276.93,224.809 276.93,244.336C276.93,244.547 276.938,244.762 276.957,244.973C277.004,245.52 281.238,300.148 246.984,338.121C228.023,359.141 183.469,383.953 115.277,390.563C111.152,390.961 108.133,394.625 108.535,398.75C108.91,402.625 112.176,405.527 115.988,405.527C116.23,405.527 116.477,405.516 116.723,405.488C177.348,399.617 231.527,377.652 258.121,348.168C295.641,306.582 292.336,249.422 291.93,244.027Z" style="fill-rule:nonzero;"/>
+                    <path d="M164.852,343.156C154.879,347.488 144.117,351.082 132.863,353.836C118.301,357.402 102.73,359.617 86.59,360.418C82.449,360.625 79.266,364.145 79.469,368.281C79.668,372.293 82.98,375.41 86.953,375.41C87.078,375.41 87.203,375.406 87.332,375.398C104.426,374.551 120.945,372.199 136.434,368.406C148.508,365.449 160.078,361.582 170.828,356.914C191.457,347.953 209.539,335.852 224.574,320.941C240.258,305.387 248.605,280.352 248.082,250.449C248.078,250.191 248.074,249.977 248.07,249.809C248.234,247.699 247.508,245.535 245.895,243.922C242.961,240.996 238.215,241 235.285,243.93C233.008,246.215 233.051,248.707 233.086,250.711C233.539,276.488 226.766,297.645 214.016,310.289C200.305,323.883 183.766,334.937 164.852,343.156Z" style="fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,-40.4502,-56.1014)">
+                    <path d="M397.715,398.539C393.57,398.539 390.215,401.898 390.215,406.039L390.215,421.117C390.215,425.262 393.57,428.617 397.715,428.617C401.859,428.617 405.215,425.262 405.215,421.117L405.215,406.039C405.215,401.898 401.855,398.539 397.715,398.539Z" style="fill-rule:nonzero;"/>
+                    <path d="M441.996,367.902L440.449,367.902L440.449,354.699C440.449,331.137 421.277,311.969 397.715,311.969C374.152,311.969 354.98,331.137 354.98,354.699L354.98,367.902L353.434,367.902C346.887,367.902 341.559,373.23 341.559,379.777L341.559,443.117C341.559,449.664 346.887,454.992 353.434,454.992L441.996,454.992C448.547,454.992 453.871,449.664 453.871,443.117L453.871,379.777C453.871,373.23 448.547,367.902 441.996,367.902ZM369.98,354.699C369.98,339.41 382.422,326.969 397.715,326.969C413.008,326.969 425.445,339.41 425.445,354.699L425.445,367.902L369.98,367.902L369.98,354.699ZM438.871,439.992L356.559,439.992L356.559,382.902L438.871,382.902L438.871,439.992Z" style="fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </svg>
+        </div>
+        <div id="cookie-banner_flag__infotext">
+            Cookies
+        </div>
+    </div>
+    <div id="banner-wrapper" hidden="hidden">
+        <style>#banner-wrapper {
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: 10000000000000000000000000000000;
+top: 0;
+}
+
+#banner-wrapper div.overlay,
+#banner-wrapper div.overlay_bc_banner {
+width: 100vw;
+height: 100vh;
+position: relative;
+display: flex;
+padding: 0px;
+background-color: #00000054;
+overflow: scroll;
+top: 0;
+pointer-events: inherit;
+justify-content: inherit;
+}
+
+#banner-wrapper div.banner-body {
+
+position: absolute;
+margin-right: auto;
+margin-left: 50%;
+margin-top: 0;
+margin-bottom: auto;
+top: 50%;
+color: #000000;
+height: auto;
+max-height: 90vh;
+width: 34%;
+max-width: unset;
+background-color: #ffffff;
+border-radius: 4px;
+transform: translate(-50%, -50%);
+box-shadow: #666 0px 0px 10px;
+overflow: auto;
+z-index: 100000000000000000000000000000000;
+
+}
+
+#banner-wrapper div.banner-body p {
+color: #000000;
+}
+
+#banner-wrapper div.banner-body__content {
+
+}
+
+#banner-wrapper div.banner-body__content .banner-main_header {
+padding: 12px 12px;
+}
+
+#banner-wrapper div.banner-body__content .banner-main_buttons {
+padding: 12px 12px;
+display: flex;
+flex-wrap: wrap;
+}
+#banner-wrapper div.banner-main {
+font-size: undefined;
+}
+
+#banner-wrapper div.banner-main_header.list-type{
+flex-direction: row;
+display: flex;
+}
+#banner-wrapper div.banner-main_header.list-type p{
+margin: 5px auto;
+}
+
+#banner-wrapper div.banner-main_header.list-type p::before {
+content: &quot;&quot;;
+width: 8px;
+height: 8px;
+margin: 1px 5px;
+border-radius:50%;
+background: #a26b25;
+display:inline-block;
+}
+
+#banner-wrapper div.banner-main_buttons p {
+cursor: pointer;
+flex-basis: 100%;
+text-align: center;
+padding: 6px;
+margin: 5px 50px;
+flex-grow: 1;
+text-align: center;
+border-radius: 4px;
+background-color: #d6d5d7;
+}
+
+#banner-wrapper div.banner-main_buttons p a {
+color: #ffffff;
+}
+#banner-wrapper div.banner-main_buttons p span {
+color: #ffffff;
+}
+
+#banner-wrapper div.banner-main_buttons p:nth-child(3) {
+flex-basis: 100%;
+background-color: unset;
+opacity: 0.7;
+}
+
+#banner-wrapper div.banner-main_buttons p:first-child {
+background-color: #a26b25;
+}
+
+#banner-wrapper div.banner-main_buttons p:first-child a {
+color: #ffffff;
+}
+
+#banner-wrapper div.banner-main_buttons p:first-child span {
+color: #ffffff;
+}
+
+#banner-wrapper div.banner-header {
+padding: 12px 12px;
+width: auto;
+height: unset;
+min-height: 47px;
+background-color: #ffffff;
+display: flex;
+flex-direction: row;
+border-radius: 4px 4px  0 0;
+}
+
+#banner-wrapper div.banner-header__title {
+text-align: right;
+color: #000000;
+font-size: 28px;
+width: 100%;
+}
+
+#banner-wrapper div.banner-header__title h2 {
+color: #000000;
+font-size: 28px;
+font-weight: unset;
+letter-spacing: 0em;
+margin-block-start: unset;
+margin-block-end: unset;
+}
+
+#banner-wrapper div.banner-logo {
+width: 60px;
+height: auto;
+}
+#banner-wrapper div.banner-logo img{
+width: 60px;
+height: auto;
+}
+
+#banner-wrapper .banner-body__content .tabs{
+width: 100%;
+max-height: 90vh;
+flex-direction: column;
+display: none;
+overflow: scroll;
+}
+
+#banner-wrapper div.banner-footer {
+margin-top: 12px;
+bottom: 0;
+font-size: 13px;
+color: #ddd;
+background-color: #ffffff;
+
+border-radius: 0 0 4px 4px;
+height: 24px;
+width: 100%;
+display: flex;
+}
+
+#banner-wrapper div.banner-footer a {
+flex-grow: 1;
+text-align: center;
+color: #ddd;
+}
+#banner-wrapper div.banner-footer a:nth-child(2){
+border-left: solid 0.5px #ddd;
+border-right: solid 0.5px #ddd;
+}
+
+#banner-wrapper div.banner-footer a:hover {
+color: #ddd;
+}
+#banner-wrapper .cookie_tab__wrapper.marketing.display div.toggle {
+padding: unset;
+}
+#banner-wrapper .toggle label {
+position: relative;
+display: inline-block;
+width: 10em;
+height: 1em;
+transform: translateY(-200%);
+}
+#banner-wrapper .toggle input {
+display: none;
+}
+#banner-wrapper .toggle .slider {
+position: absolute;
+cursor: pointer;
+top: 1.5em;
+left: 2em;
+width: 4em;
+height: 2.2em;
+background-color: #bfbfbf;
+transition: all 0.3s ease-in-out;
+border-radius: 1em;
+display: block;
+}
+#banner-wrapper .toggle .slider:before {
+/* verschiebbarer Button */
+
+position: absolute;
+content: &quot;&quot;;
+height: 1.6em;
+width: 1.6em;
+left: 0.2em;
+bottom: 0.3em;
+background-color: white;
+border-radius: 50%;
+transition: all .3s ease-in-out;
+}
+
+#banner-wrapper .toggle input:checked + .slider {
+background-color: #5a9900;
+/* green */
+}
+
+#banner-wrapper .toggle input:focus + .slider {
+background-color: pink;
+box-shadow: 0 0 1px #5a9900;
+}
+
+#banner-wrapper .toggle input:checked + .slider:before {
+-webkit-transform: translateX(1.9em);
+/* Android 4 */
+
+-ms-transform: translateX(1.9em);
+/* IE9 */
+
+transform: translateX(1.9em);
+}
+
+#banner-wrapper .cookie_table, .cookie_tab__wrapper {
+width: 100%;
+}
+#banner-wrapper .cookie_tab__wrapper_header{
+background-color: #f5f5f5;
+padding: 20px;
+font-size: 0.9em;
+}
+#banner-wrapper .cookie_tab__wrapper_header p{
+padding-bottom: 6px;
+}
+#banner-wrapper .cookie_tab__wrapper div{
+margin-bottom: 12px;
+
+}
+#banner-wrapper .cookie_tab__wrapper.essential.display, .cookie_tab__wrapper.marketing.display {
+display: block;
+}
+#banner-wrapper .cookie_tab__wrapper  table tbody th {
+width: 120px;
+}
+#banner-wrapper .cookie_tab__wrapper table {
+width: 100%;
+}
+#banner-wrapper .cookie_tab__wrapper table tbody {
+font-size: 0.8em;
+}
+#banner-wrapper .cookie_tab__wrapper.marketing.display div, .cookie_tab__wrapper.essential.display div {
+background-color: #fff;
+padding: 12px;
+}@media only screen and (max-width: 750px){
+div.overlay,
+             div.overlay_bc_banner {
+padding: unset;
+overflow: scroll;
+}
+
+
+#banner-wrapper div.banner-body {
+margin-right: calc((100% - 90%) / 2);
+margin-left: calc((100% - 90%) / 2);
+margin-top: 25px;
+top: 25px;
+width: 90%;
+min-width: 90%;
+transform: unset;
+}
+
+#banner-wrapper div.banner-body__content {
+
+
+}
+
+#banner-wrapper div.banner-header {
+
+padding: 12px 12px;
+width: auto;
+height: 60px;
+}
+
+#banner-wrapper div.banner-header__title {
+text-align: center;
+font-size: 24px;
+}
+
+#banner-wrapper div.banner-header__title h2 {
+font-size: 24px;
+}
+
+#banner-wrapper div.banner-logo {
+width: 60px;
+height: auto;
+}
+
+#banner-wrapper .banner-body__content .tabs{
+}
+
+#banner-wrapper div.banner-footer {
+font-size: 14px;
+}
+
+}</style>
+
+        <div class="overlay_bc_banner">
+            <div class="banner-body">
+                <div class="banner-body__content">
+                    <div class="banner-header">
+                        <div class="banner-logo">
+                            
+                                <img class="logo" src="data:image/png;base64,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" alt="my logo title">
+                            
+                        </div>
+                        <div class="banner-header__title">
+                            <p>Cookies</p>
+                        </div>
+                    </div>
+                    <div class="banner-main">
+                        <div class="banner-main_header">
+                            <p>Wir verwenden Cookies. Viele sind notwendig, um die Website und ihre Funktionen zu betreiben, andere sind für statistische oder Marketingzwecke. Mit der Entscheidung "Nur essentielle Cookies akzeptieren" werden wir Deine Privatsphäre respektieren und keine Cookies setzen, die nicht für den Betrieb der Seite notwendig sind.</p>
+                            <p></p>
+                        </div>
+                        <div class="banner-main_header list-type">
+                            <p>Essenzielle</p>
+                            <p>Statistik & Marketing</p>
+                        </div>
+                        <div class="banner-main_buttons">
+                            <p id="all_accept" class="btn-accept">
+                                <span class="btn-btn btn-btn-accept-all cursor" data-cookie-accept-all>Alle akzeptieren</span>
+                            </p>
+                            <p id="essential_accept" class="btn-accept">
+                                <span class="btn-btn btn-btn-save cursor" data-cookie-save>Nur Essentielle Cookies akzeptieren</span>
+                            </p>
+                            <!-- todo indivuell entscheiden -->
+                            <p class="btn-manage cursor">
+                                Individuelle Cookie Einstellungen</p>
+
+                            <p class="btn-accept btn-manage__save cursor" hidden>Speichern & schließen</p>
+                        </div>
+
+                    </div>
+
+                    <div class="tabs" hidden="hidden">
+
+                        <div class="cookie_tab__wrapper_header">
+                            <p id="countEssentials">
+                                <strong>Essenzielle</strong>
+                                <strong class="counter"></strong>
+                            </p>
+                            <p>Essenzielle Cookies ermöglichen grundlegende Funktionen und sind für die einwandfreie Funktion der Website erforderlich.</p>
+                            <details>
+                                <summary id="summary_essential" style="cursor: pointer;">Informationen anzeigen</summary>
+                                <div class="cookie_tab__wrapper essential display"></div>
+                            </details>
+
+
+                        </div>
+
+                        <div class="cookie_tab__wrapper_header">
+                            <p id="countMarketing">
+                                <strong>Statistik & Marketing</strong>
+                                <strong class="counter"></strong>
+                            </p>
+                            <p>Marketing-Cookies werden von Drittanbietern oder Publishern verwendet, um personalisierte Werbung anzuzeigen. Sie tun dies, indem sie Besucher über Websites hinweg verfolgen.</p>
+                            <div class="toggle">
+                                <label for="input_all_cookies">
+                                    <input name="all_cookies" id="input_all_cookies" type="checkbox"><span class="slider"></span>
+                                </label>
+                            </div>
+                            <p style="height: 1.2em;"></p>
+                            <details>
+                                <summary id="summary_marketing" style="cursor: pointer;">Informationen anzeigen</summary>
+                                <div class="cookie_tab__wrapper marketing display"></div>
+                            </details>
+
+                        </div>
+
+                    </div>
+
+                    <div style="text-align: center; font-size: 0.7em; color: #7d7d7d;">
+                        <a href="https://gdpr-legal-cookie.myshopify.com/" rel="nofollow" style="color: #7d7d7d;">GDPR legal Cookie</a>
+                    </div>
+                    <div class="banner-footer">
+                        
+                            <a href="/policies/privacy-policy">Datenschutzhinweis</a>
+                        
+
+                        
+                            <a href="/pages/kontakt">Kontakt</a>
+                        
+
+                        
+                            <a href="/policies/legal-notice">Impressum</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
